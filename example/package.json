@@ -3,7 +3,13 @@
         "./css/dist/peaches.css":[
             "./css/src/base.css",
             "./css/src/button.css",
-            "./css/src/index.css"
+            "./css/src/index.css",
+            "./css/src/tmall_icon.css"
+
+        ],
+        "./css/dist/v1.css":[
+            "./css/src/common-v1.css"
+
         ]
     },
     "server":{
