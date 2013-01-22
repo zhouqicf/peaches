@@ -15,6 +15,7 @@ program
     .option('build', '编译项目')
     .option('deploy', '编译并发布项目,主要用于自动上传图片到线上服务器')
     .option('-v, --verbose', '显示更多的日志信息')
+    .option('-o, --output <output>', '文件输出')
     .option('-q, --quiet', '显示较少的日志信息')
     .option('-p, --pkg <package.json>', '设置package.json的路径,默认使用当前目录下的package.json')
     //.option('--encoding <encoding>', '指定在进行文件处理时，涉及到的文件编码。 默认是 utf8 ')
@@ -145,21 +146,37 @@ function main() {
          * */
         'use strict';
         var baseDir = path.dirname(program.pkg),
-            o, dist;
+            o, dist, output2 = {};
 
         config.server.root = path.join(baseDir, config.server.root);
         config.server.tmp = path.join(baseDir, config.server.tmp);
 
-        var output2 = {};
-        for (o in config.output) {
-            if (config.output.hasOwnProperty(o)) {
-                dist = path.join(baseDir, o);
-                output2[dist] = [];
-                config.output[o].forEach(function (src) {
-                    output2[dist].push(path.join(baseDir, src));
-                });
+        // 如果传了参数则不读取 package.json 的 output
+        // peaches a.js,b.js -o ./c.js
+        var files = program.args[0];
+
+        if (files) {
+            var dist = program.output ?
+              path.resolve(baseDir, program.output) : '';
+
+            files = files.split(',');
+
+            output2[dist] = [];
+            for (var i in files) {
+                output2[dist].push(path.resolve(baseDir, files[i]))
+            }
+        } else {
+            for (o in config.output) {
+                if (config.output.hasOwnProperty(o)) {
+                    dist = path.join(baseDir, o);
+                    output2[dist] = [];
+                    config.output[o].forEach(function (src) {
+                        output2[dist].push(path.join(baseDir, src));
+                    });
+                }
             }
         }
+
         config.output = output2;
 
         next();
