@@ -2,6 +2,7 @@
 
 var path = require('path'),
     async = require('async'),
+    shelljs = require('shelljs'),
     logger = require('colorful').logging,
     fs = require('fs'),
     program = require('commander'),
@@ -170,7 +171,7 @@ function main() {
         'use strict';
         if (!fs.existsSync(config.server.root)) {
             try {
-                fs.mkdirSync(config.server.root);
+                shelljs.mkdir('-p', config.server.root);
             }
             catch (e) {
                 logger.error('无法创建目录：%s', config.server.root);
@@ -179,7 +180,7 @@ function main() {
         }
         if (!fs.existsSync(config.server.tmp)) {
             try {
-                fs.mkdirSync(config.server.tmp);
+                shelljs.mkdir('-p', config.server.tmp);
             }
             catch (e) {
                 logger.error('无法创建目录：%s', config.server.tmp);
