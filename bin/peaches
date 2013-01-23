@@ -31,14 +31,12 @@ var config , watchFileList = [], cli = require('../lib/cli');
 function main() {
     'use strict';
     async.series([function (next) {
-        'use strict';
         /**
          * 配置logger
          */
         logger.config(program);
         next();
     }, function (next) {
-        'use strict';
         /**
          * 处理pkg
          */
@@ -69,7 +67,6 @@ function main() {
          * 3. 都没有设置，默认设置为 png8
          *
          */
-        'use strict';
         var formatList = ['png8', 'png24'];
         // 如果输入了 program.format ，覆盖配置
         if (typeof program.format !== 'undefined') {
@@ -100,7 +97,6 @@ function main() {
          * 3. 都没有设置，默认设置为 h，纵向排序。
          *
          */
-        'use strict';
         var sortList = ['h', 'v'];
         if (typeof program.sort !== 'undefined') {
             config.sort = program.sort;
@@ -119,20 +115,18 @@ function main() {
             next();
         });
     }, function (next) {
-        'use strict';
         if (typeof program.autoReload === 'undefined') {
             program.autoReload = false;
         }
         next();
     }, function (next) {
-        'use strict';
         if (program.build) {
             config.server = config.server.build;
         }
         else if (program.deploy) {
             config.server = config.server.deploy;
         }
-// 如果没有输入 build 和 deploy 那么使用 build方式处理。
+        // 如果没有输入 build 和 deploy 那么使用 build方式处理。
         else {
             config.server = config.server.build;
         }
@@ -144,7 +138,6 @@ function main() {
         /**
          * 全部转换为绝对路径
          * */
-        'use strict';
         var baseDir = path.dirname(program.pkg),
             o, dist, output2 = {};
 
@@ -156,14 +149,16 @@ function main() {
         var files = program.args[0];
 
         if (files) {
-            var dist = program.output ?
-              path.resolve(baseDir, program.output) : '';
+            dist = program.output ?
+                path.resolve(baseDir, program.output) : '';
 
             files = files.split(',');
 
             output2[dist] = [];
             for (var i in files) {
-                output2[dist].push(path.resolve(baseDir, files[i]))
+                if (files.hasOwnProperty(i)) {
+                    output2[dist].push(path.resolve(baseDir, files[i]));
+                }
             }
         } else {
             for (o in config.output) {
@@ -185,7 +180,6 @@ function main() {
         /**
          * 创建目录
          * */
-        'use strict';
         if (!fs.existsSync(config.server.root)) {
             try {
                 shelljs.mkdir('-p', config.server.root);
@@ -207,7 +201,6 @@ function main() {
         next();
     }
     ], function () {
-        'use strict';
         config.program = program;
         config.clean = program.clean;
         cli.main(config);
