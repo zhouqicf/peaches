@@ -157,14 +157,19 @@ function main() {
             case 'local':
                 // 当使用local模式时，由于需要启动static服务器，所以开启autoReload，确保进程不终止；
                 program.autoReload = true;
-                logger.start('使用local模式，正在启动服务..');
-                var file = new (nodeStatic.Server)(server.root);
-                require('http').createServer(function (request, response) {
-                    request.addListener('end', function () {
-                        file.serve(request, response);
-                    });
-                }).listen(server.port);
-                logger.end('local模式启动完毕,%s', server.baseURI);
+
+                if (server.port !== '80') {
+                    logger.start('使用local模式，正在启动服务..');
+                    logger.info('使用local模式，默认启动autoReload。帮助：http://peaches.io/doc/package#local');
+                    var file = new (nodeStatic.Server)(server.root);
+                    require('http').createServer(function (request, response) {
+                        request.addListener('end', function () {
+                            file.serve(request, response);
+                        });
+                    }).listen(server.port);
+                    logger.end('local模式启动完毕,%s', server.baseURI);
+                }
+
                 break;
             case 'upyun':
                 if (server.username === '' || server.password === '' || server.bucket === '') {

@@ -25,9 +25,9 @@ function init(program, next) {
     }
     // 设置pkg为系统默认配置
     program.pkg = require(defaultPkg);
-    pkg = path.resolve(pkg);
 
     if (pkg !== './package.json') {
+        pkg = path.resolve(pkg);
         try {
             pkg = fs.readFileSync(pkg);
         } catch (e) {
@@ -45,6 +45,7 @@ function init(program, next) {
     }
     // 默认加载当前目录下的配置。
     else {
+        pkg = path.resolve(pkg);
         var exists = true;
         try {
             pkg = fs.readFileSync(pkg);
