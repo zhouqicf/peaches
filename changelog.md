@@ -5,6 +5,7 @@
 * 支持 peaches a.css b.css -o c.css
 * peaches 配置文件默认加载 ~/.peaches/package.json
 * peaches tmp 目录和图片合并默认目录，默认到 ~/.peaches/tmp 和 ~/.peaches/images
+* 使用local 方式托管图片时，启动本地静态服务器。
 
 ## 0.3.3 2012-12-22
 * 使用colorful作为logger输出工具，更友好的logger样式。
