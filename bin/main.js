@@ -18,7 +18,7 @@ function list(val) {
 
 program
     .version(version)
-    .usage('peaches [options]')
+    .usage('[<a.css> [<b.css> ...]] [options]')
     .option('-m, --model <local/alipayobjects/scp/upyun>', '配置图片托管模式，默认为local模式', 'local')
     .option('-v, --verbose', '显示更多的日志信息')
     .option('-i, --input <file...>', '需要编译的css，以“,”分割,各文件将会被合并编译', list)
@@ -28,18 +28,29 @@ program
     .option('-c, --clean', '清空缓存文件，系统会保留备份文件夹，不需要备份，请结合 --force参数使用')
     .option('-r, --autoReload', '设置是否根据文件的变更自动编译。默认为 false')
     .option('-s, --sort <h>', '设置图片的排列方式， h 为纵向排列，v 为横向排列。默认为h，纵向排列', 'h')
-    .option('-f, --format <png8>', '设置图片输出格式，可以选择 png8  、 png24 。默认为 png8', 'png8');
+    .option('-f, --format <png8>', '设置图片输出格式，可以选择 png8  、 png24 。默认为 png8', 'png8')
+    .option('--cloud', '使用云端模式');
+
 
 program.on('--help', function () {
     'use strict';
     console.log('  1.关于图片托管模式（-m, --model <local/alipayobjects/scp/upyun>），请查看http://peaches.io/doc/image-model');
+    console.log('');
     console.log('  一些例子:');
     console.log('');
     console.log('    1. 编译a.css到out.css');
     console.log('    $ peaches a.css -o out.css');
+    console.log('    $ peaches -i a.css -o out.css');
     console.log('');
     console.log('    2. 合并a.css,b.css 并编译到到out.css');
-    console.log('    $ peaches a.css,b.css -o out.css');
+    console.log('    $ peaches a.css b.css -o out.css');
+    console.log('    $ peaches -i a.css,b.css -o out.css');
+    console.log('');
+    console.log('    3. 合并a.css,b.css 并编译到到out.css,并将图片上传到alipaycnd');
+    console.log('    $ peaches a.css b.css -o out.css -m alipayobjects');
+    console.log('');
+    console.log('    4. 根据当前目录下的package.json 配置进行编译');
+    console.log('    $ peaches');
     console.log('');
 });
 
@@ -59,6 +70,10 @@ function main() {
          * 初始化配置
          */
         init(program, next);
+    }, function (next) {
+        program.pkg.cloud = program.cloud;
+        program.pkg.version = version;
+        next();
     }, function (next) {
         /**
          * 处理 format。
@@ -119,11 +134,6 @@ function main() {
                 next();
             });
         });
-    }, function (next) {
-        if (typeof program.autoReload === 'undefined') {
-            program.pkg.autoReload = program.autoReload;
-        }
-        next();
     }, function (next) {
         var modelList = ['local', 'alipayobjects', 'scp', 'upyun'];
         if (typeof program.model !== 'undefined') {
@@ -189,6 +199,11 @@ function main() {
                     process.exit(1);
                 }
                 break;
+        }
+        next();
+    }, function (next) {
+        if (typeof program.autoReload !== 'undefined') {
+            program.pkg.autoReload = program.autoReload;
         }
         next();
     }, function (next) {
