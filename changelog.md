@@ -1,5 +1,11 @@
 # change log
 
+## 0.3.6Beta
+* 支持 peaches -i a.css,b.css -o c.css
+* 支持 peaches a.css b.css -o c.css
+* peaches 配置文件默认加载 ~/.peaches/package.json
+* peaches tmp 目录和图片合并默认目录，默认到 ~/.peaches/tmp 和 ~/.peaches/images
+
 ## 0.3.3 2012-12-22
 * 使用colorful作为logger输出工具，更友好的logger样式。
 * 使用node原生程序下载文件
