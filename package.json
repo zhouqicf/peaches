@@ -32,7 +32,7 @@
         "shelljs": "0.1.2",
         "node-static":"~0.6.7"
     },
-    "optionalDependencies": {
+    "devDependencies": {
         "canvas": "~0.13.1"
     },
     "bin": {
