@@ -1,27 +1,57 @@
+var path = require('path');
 var fs = require('fs');
+require('should');
+require = require('./testutils');
 var download = require('../lib/download');
-var md5 = require('../lib/tools').md5;
-module.exports = {
-    setUp: function (callback) {
-        'use strict';
-        callback();
-    },
-    tearDown: function (callback) {
-        'use strict';
-        callback();
-    },
-    test1: function (test) {
-        'use strict';
-        var file_name = '/tmp/1ZXqZDls6m.jpg';
-        download('https://i.alipayobjects.com/e/201211/1ZXqZDls6m.jpg', file_name, function (err, file_name) {
 
-            test.equals(fs.existsSync(file_name), true);
-
-            var file_md5 = md5(fs.readFileSync(file_name));
-            test.equals(file_md5, 'd41d8cd98f00b204e9800998ecf8427e');
-
-            test.done();
+var tmpdir = path.join(__dirname, '../download');
+if (!fs.existsSync(tmpdir)) {
+    fs.mkdirSync(tmpdir);
+}
+describe('download', function () {
+    'use strict';
+    it('下载http资源', function (done) {
+        var name = new Date().getTime();
+        name = path.join(tmpdir, name + '.png');
+        download('http://img01.taobaocdn.com/tps/i1/T1Q6Z_XkleXXckc6kx-428-101.png', name, function (err) {
+            if (err) {
+                throw err;
+            }
+            // 检测下载文件存在
+            try{
+                var data = fs.readFileSync(name);
+                data.length.should.eql(9793);
+            }
+            catch(e){
+                throw e;
+            }
+            done();
         });
+    });
+    it('下载https资源', function (done) {
+        var name = new Date().getTime();
+        name = path.join(tmpdir, name + '.png');
+        download('https://tfsimg.alipay.com/images/partner/T1vXVXXcpdXXXXXXXX', name, function (err) {
+            if (err) {
+                throw err;
+            }
+            try{
+                var data = fs.readFileSync(name);
+                data.length.should.eql(9240);
+            }
+            catch(e){
+                throw e;
+            }
+            done();
+        });
+    });
 
-    }
-};
+    it('不能下载ftp资源', function (done) {
+        var name = new Date().getTime();
+        name = path.join(tmpdir, name + '.png');
+        download('ftp://tfsimg.alipay.com/images/partner/T1vXVXXcpdXXXXXXXX', name, function (err) {
+            err.should.be.an.instanceof(Error);
+            done();
+        });
+    });
+});
