@@ -2,6 +2,8 @@
 ======
 > 简单、自然的书写样式
 
+[![Build Status](https://travis-ci.org/sliuqin/peaches.png?branch=master)](https://travis-ci.org/sliuqin/peaches)
+
 **Peaches** 是一个CSS编译工具，用于自动合并background-image并更新background-position。  
 
 **Peaches** 追求简单、自然的CSS书写方式。使用 **Peaches**，可以让我们的工作更轻松愉快：
