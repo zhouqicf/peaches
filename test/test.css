@@ -1,0 +1,147 @@
+@charset "utf-8";
+
+@media print {
+    body { font-size: 10pt }
+}
+@media screen {
+    body { font-size: 13px }
+}
+@media screen, print {
+    body { line-height: 1.2 }
+}
+/* 选择器拆分-属性值合并 开始... */
+
+/* 1. 单一选择器合并 */
+.test-merger-1 {
+    color: red;
+}
+
+.test-merger-1 {
+    padding: 0;
+}
+
+/* 2. 多个选择器公用样式块 */
+.test-merger-2, .test-merger-3 {
+    margin: 10px;
+}
+
+/* 3. 多个选择器公用样式块 和独立样式块 不同属性的合并 */
+.test-merger-4 {
+    padding: 10px;
+}
+
+.test-merger-4, .test-merger-5 {
+    margin: 10px;
+}
+
+/* 4. 单个选择器，样式属性覆盖 */
+.test-merger-6 {
+    font-size: 16px;
+}
+
+.test-merger-6 {
+    font-size: 18px;
+}
+
+/* 5. 单个选择器，样式属性覆盖 important */
+.test-merger-7 {
+    font-size: 16px !important;
+}
+
+.test-merger-7 {
+    font-size: 18px;
+}
+
+/* 5. 单个选择器，样式属性覆盖 important */
+.test-merger-8 {
+    font-size: 16px;
+}
+
+.test-merger-8 {
+    font-size: 18px !important;
+}
+
+/* 6. 单个选择器，样式属性覆盖 important */
+.test-merger-9 {
+    font-size: 16px !important;
+}
+
+.test-merger-9 {
+    font-size: 18px !important;
+}
+
+/* 7. 单个选择器，样式属性覆盖 多个相同属性 */
+.test-merger-10 {
+    font-size: 16px !important;
+}
+
+.test-merger-10 {
+    font-size: 18px !important;
+}
+
+.test-merger-10 {
+    font-size: 20px;
+}
+
+/* 8. 多重选择器,不能合并 */
+body .test-merger-11 {
+    color: red;
+}
+
+.test-merger-11 {
+    color: #808080;
+}
+
+/* 9. 多重选择器，多空格支持 */
+/* 两个空格 */
+body  .test-merger-12 {
+    display: none;
+}
+
+/* 一个空格 */
+body .test-merger-12, body   .test-merger-12 {
+    float: left;
+}
+/* 10. 多样的css选择器 */
+.test-merger-12:first-of-type{
+    float: left;
+}
+.test-merger-12:first-of-type{
+    float: inherit;
+    color: black;
+}
+
+/* 11. keyframes */
+.test-merger-13
+{
+    animation:move 5s infinite;
+    -moz-animation:move 5s infinite; /* Firefox */
+    -webkit-animation:move 5s infinite; /* Safari and Chrome */
+    -o-animation:move 5s infinite; /* Opera */
+}
+
+@keyframes move
+{
+    from {top:0px;}
+    to {top:200px;}
+}
+
+@-moz-keyframes move /* Firefox */
+{
+    from {top:0px;}
+    to {top:200px;}
+}
+
+@-webkit-keyframes move /* Safari and Chrome */
+{
+    from {top:0px;}
+    to {top:200px;}
+}
+
+@-o-keyframes move /* Opera */
+{
+    from {top:0px;}
+    to {top:200px;}
+}
+
+/* 选择器拆分-属性值合并 开始... */

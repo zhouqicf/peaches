@@ -1,7 +1,8 @@
+require = require('./testutils');
+
 var path = require('path');
 var fs = require('fs');
 require('should');
-require = require('./testutils');
 var download = require('../lib/download');
 
 var tmpdir = path.join(__dirname, '../download');

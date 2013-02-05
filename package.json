@@ -43,5 +43,9 @@
     "engines": {
         "node": ">= 0.8.1"
     },
+    "scripts": {
+        "test": "make test",
+        "test-cov": "make test-cov"
+    },
     "main": "./lib/index.js"
 }

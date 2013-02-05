@@ -11,17 +11,19 @@ test-unit:
 		$(MOCHA_OPTS)
 
 test-cov: clean lib-cov
-	@PEACHES_COV=1 $(MAKE) test REPORTER=html-cov > coverage.html
-
+	@PEACHES_COV=1 $(MAKE) test REPORTER=html-cov > coverage.html && $(MAKE) cleanTemp
 lib-cov:
 	@jscoverage lib lib-cov
 
 benchmark:
 	@./support/bench
 
-clean:
-	rm -f coverage.html
-	rm -fr lib-cov
+cleanTemp:
+	rm -rf lib-cov
 	rm -rf download
+
+clean: cleanTemp
+	rm -f coverage.html
+
 
 .PHONY: test test-unit test-acceptance benchmark clean
