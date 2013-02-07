@@ -1,5 +1,4 @@
 {
-  "stylesheet": {
     "rules": [
       {
         "name": "fade",
@@ -30,5 +29,4 @@
         ]
       }
     ]
-  }
 }

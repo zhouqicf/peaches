@@ -15,11 +15,11 @@ describe('parse(str)', function () {
         file = path.basename(file, '.css');
         it('should parse ' + file, function () {
             var css = read(path.join(__dirname, 'style/pom/', file + '.css'), 'utf8');
-            var json = read(path.join(__dirname, 'style/pom/', file + '.json'), 'utf8');
+            var json = require(path.join(__dirname, 'style/pom/', file + '.json'));
             var pom = new POM(css);
             pom.parse();
-            var ret = JSON.stringify({stylesheet: pom.stylesheet}, null, 2);
-            ret.should.equal(json);
+            var ret = JSON.stringify(pom.stylesheet, null, 2);
+            ret.should.equal(JSON.stringify(json, null, 2));
         })
     });
 })

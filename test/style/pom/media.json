@@ -1,5 +1,4 @@
 {
-  "stylesheet": {
     "rules": [
       {
         "media": "screen, projection",
@@ -72,5 +71,4 @@
         ]
       }
     ]
-  }
 }

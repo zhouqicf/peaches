@@ -1,5 +1,4 @@
 {
-  "stylesheet": {
     "rules": [
       {
         "import": "url(\"fineprint.css\") print"
@@ -17,5 +16,4 @@
         "import": "url('landscape.css') screen and (orientation:landscape)"
       }
     ]
-  }
 }

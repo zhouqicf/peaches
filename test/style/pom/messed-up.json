@@ -1,5 +1,4 @@
 {
-  "stylesheet": {
     "rules": [
       {
         "selectors": [
@@ -43,5 +42,4 @@
         ]
       }
     ]
-  }
 }

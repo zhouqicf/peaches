@@ -1,5 +1,4 @@
 {
-  "stylesheet": {
     "rules": [
       {
         "name": "foo",
@@ -61,5 +60,4 @@
         ]
       }
     ]
-  }
 }
