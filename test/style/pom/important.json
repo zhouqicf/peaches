@@ -7,7 +7,24 @@
             "declarations": [
                 {
                     "property": "color",
-                    "value": "red!important",
+                    "value": "red !important",
+                    "important": true
+                },
+                {
+                    "property": "font",
+                    "value": "'Times New Roman' !important",
+                    "important": true
+                }
+            ]
+        },
+        {
+            "selectors": [
+                "p"
+            ],
+            "declarations": [
+                {
+                    "property": "color",
+                    "value": "red !important",
                     "important": true
                 }
             ]

@@ -1,3 +1,9 @@
 image {
-    color:red!important;
+    color: red     !important;
+    font: 'Times New Roman' !important  ;
 }
+
+p {
+    color: red !important   ;
+}
+

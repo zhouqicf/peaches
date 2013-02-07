@@ -6,7 +6,7 @@
             ],
             "declarations": [
                 {
-                    "property": "foo\n  ",
+                    "property": "foo",
                     "value": "'bar'",
                     "important": false
                 }
@@ -35,12 +35,12 @@
             ],
             "declarations": [
                 {
-                    "property": "foo\n     ",
+                    "property": "foo",
                     "value": "bar",
                     "important": false
                 },
                 {
-                    "property": "bar\n     ",
+                    "property": "bar",
                     "value": "baz",
                     "important": false
                 }
