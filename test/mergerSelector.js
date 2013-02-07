@@ -4,7 +4,7 @@ var fs = require('fs');
 require('should');
 var cssom = require('cssom');
 var Merger = require('../lib/merger');
-var css_file = path.join(__dirname, 'test.css');
+var css_file = path.join(__dirname, './style/test.css');
 var styleText = fs.readFileSync(css_file).toString();
 
 var config = {

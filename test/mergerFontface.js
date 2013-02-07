@@ -1,11 +1,10 @@
 require = require('./testutils');
-
 var path = require('path');
 var fs = require('fs');
 require('should');
 var cssom = require('cssom');
 var Merger = require('../lib/merger');
-var css_file = path.join(__dirname, './style/test.css');
+var css_file = path.join(__dirname, './style/font-face.css');
 var styleText = fs.readFileSync(css_file).toString();
 
 var config = {
@@ -22,17 +21,16 @@ var config = {
     }
 };
 
-describe('media test', function () {
+describe('merger test', function () {
     'use strict';
     var styleSheet = cssom.parse(styleText);
     var mergerStyleSheet = new Merger(styleSheet);
+    it('font-face', function (done) {
 
-    it('@media', function (done) {
         mergerStyleSheet.styleSheet.cssRules.forEach(function (rule) {
-            if (!rule.media) {
-                return;
-            }
+
         });
         done();
     });
-});
+})
+;

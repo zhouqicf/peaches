@@ -126,19 +126,19 @@ body .test-merger-12, body   .test-merger-12 {
     to {top:200px;}
 }
 
-@-moz-keyframes move /* Firefox */
+@-moz-keyframes move
 {
     from {top:0px;}
     to {top:200px;}
 }
 
-@-webkit-keyframes move /* Safari and Chrome */
+@-webkit-keyframes move
 {
     from {top:0px;}
     to {top:200px;}
 }
 
-@-o-keyframes move /* Opera */
+@-o-keyframes move
 {
     from {top:0px;}
     to {top:200px;}
