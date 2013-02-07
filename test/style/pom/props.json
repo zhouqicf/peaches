@@ -1,23 +1,26 @@
 {
     "rules": [
-      {
-        "selectors": [
-          "tobi loki jane"
-        ],
-        "declarations": [
-          {
-            "property": "are",
-            "value": "'all'"
-          },
-          {
-            "property": "the-species",
-            "value": "called \"ferrets\""
-          },
-          {
-            "property": "*even",
-            "value": "'ie crap'"
-          }
-        ]
-      }
+        {
+            "selectors": [
+                "tobi loki jane"
+            ],
+            "declarations": [
+                {
+                    "property": "are",
+                    "value": "'all'",
+                    "important": false
+                },
+                {
+                    "property": "the-species",
+                    "value": "called \"ferrets\"",
+                    "important": false
+                },
+                {
+                    "property": "*even",
+                    "value": "'ie crap'",
+                    "important": false
+                }
+            ]
+        }
     ]
 }

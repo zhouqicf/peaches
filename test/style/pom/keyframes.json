@@ -1,31 +1,33 @@
 {
     "rules": [
-      {
-        "name": "fade",
-        "keyframes": [
-          {
-            "values": [
-              "from"
-            ],
-            "declarations": [
-              {
-                "property": "opacity",
-                "value": "0"
-              }
+        {
+            "name": "fade",
+            "keyframes": [
+                {
+                    "values": [
+                        "from"
+                    ],
+                    "declarations": [
+                        {
+                            "property": "opacity",
+                            "value": "0",
+                            "important": false
+                        }
+                    ]
+                },
+                {
+                    "values": [
+                        "to"
+                    ],
+                    "declarations": [
+                        {
+                            "property": "opacity",
+                            "value": "1",
+                            "important": false
+                        }
+                    ]
+                }
             ]
-          },
-          {
-            "values": [
-              "to"
-            ],
-            "declarations": [
-              {
-                "property": "opacity",
-                "value": "1"
-              }
-            ]
-          }
-        ]
-      }
+        }
     ]
 }

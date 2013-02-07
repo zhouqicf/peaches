@@ -1,26 +1,28 @@
 {
     "rules": [
-      {
-        "selectors": [
-          "tobi"
-        ],
-        "declarations": [
-          {
-            "property": "name",
-            "value": "'tobi'"
-          }
-        ]
-      },
-      {
-        "selectors": [
-          "loki"
-        ],
-        "declarations": [
-          {
-            "property": "name",
-            "value": "'loki'"
-          }
-        ]
-      }
+        {
+            "selectors": [
+                "tobi"
+            ],
+            "declarations": [
+                {
+                    "property": "name",
+                    "value": "'tobi'",
+                    "important": false
+                }
+            ]
+        },
+        {
+            "selectors": [
+                "loki"
+            ],
+            "declarations": [
+                {
+                    "property": "name",
+                    "value": "'loki'",
+                    "important": false
+                }
+            ]
+        }
     ]
 }

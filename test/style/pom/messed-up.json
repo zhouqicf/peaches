@@ -1,45 +1,50 @@
 {
     "rules": [
-      {
-        "selectors": [
-          "body"
-        ],
-        "declarations": [
-          {
-            "property": "foo\n  ",
-            "value": "'bar'"
-          }
-        ]
-      },
-      {
-        "selectors": [
-          "body"
-        ],
-        "declarations": [
-          {
-            "property": "foo",
-            "value": "bar"
-          },
-          {
-            "property": "bar",
-            "value": "baz"
-          }
-        ]
-      },
-      {
-        "selectors": [
-          "body"
-        ],
-        "declarations": [
-          {
-            "property": "foo\n     ",
-            "value": "bar"
-          },
-          {
-            "property": "bar\n     ",
-            "value": "baz"
-          }
-        ]
-      }
+        {
+            "selectors": [
+                "body"
+            ],
+            "declarations": [
+                {
+                    "property": "foo\n  ",
+                    "value": "'bar'",
+                    "important": false
+                }
+            ]
+        },
+        {
+            "selectors": [
+                "body"
+            ],
+            "declarations": [
+                {
+                    "property": "foo",
+                    "value": "bar",
+                    "important": false
+                },
+                {
+                    "property": "bar",
+                    "value": "baz",
+                    "important": false
+                }
+            ]
+        },
+        {
+            "selectors": [
+                "body"
+            ],
+            "declarations": [
+                {
+                    "property": "foo\n     ",
+                    "value": "bar",
+                    "important": false
+                },
+                {
+                    "property": "bar\n     ",
+                    "value": "baz",
+                    "important": false
+                }
+            ]
+        }
     ]
 }

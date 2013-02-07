@@ -1,74 +1,82 @@
 {
     "rules": [
-      {
-        "media": "screen, projection",
-        "rules": [
-          {
-            "selectors": [
-              "html"
-            ],
-            "declarations": [
-              {
-                "property": "background",
-                "value": "#fffef0"
-              },
-              {
-                "property": "color",
-                "value": "#300"
-              }
+        {
+            "media": "screen, projection",
+            "rules": [
+                {
+                    "selectors": [
+                        "html"
+                    ],
+                    "declarations": [
+                        {
+                            "property": "background",
+                            "value": "#fffef0",
+                            "important": false
+                        },
+                        {
+                            "property": "color",
+                            "value": "#300",
+                            "important": false
+                        }
+                    ]
+                },
+                {
+                    "selectors": [
+                        "body"
+                    ],
+                    "declarations": [
+                        {
+                            "property": "max-width",
+                            "value": "35em",
+                            "important": false
+                        },
+                        {
+                            "property": "margin",
+                            "value": "0 auto",
+                            "important": false
+                        }
+                    ]
+                }
             ]
-          },
-          {
-            "selectors": [
-              "body"
-            ],
-            "declarations": [
-              {
-                "property": "max-width",
-                "value": "35em"
-              },
-              {
-                "property": "margin",
-                "value": "0 auto"
-              }
+        },
+        {
+            "media": "print",
+            "rules": [
+                {
+                    "selectors": [
+                        "html"
+                    ],
+                    "declarations": [
+                        {
+                            "property": "background",
+                            "value": "#fff",
+                            "important": false
+                        },
+                        {
+                            "property": "color",
+                            "value": "#000",
+                            "important": false
+                        }
+                    ]
+                },
+                {
+                    "selectors": [
+                        "body"
+                    ],
+                    "declarations": [
+                        {
+                            "property": "padding",
+                            "value": "1in",
+                            "important": false
+                        },
+                        {
+                            "property": "border",
+                            "value": "0.5pt solid #666",
+                            "important": false
+                        }
+                    ]
+                }
             ]
-          }
-        ]
-      },
-      {
-        "media": "print",
-        "rules": [
-          {
-            "selectors": [
-              "html"
-            ],
-            "declarations": [
-              {
-                "property": "background",
-                "value": "#fff"
-              },
-              {
-                "property": "color",
-                "value": "#000"
-              }
-            ]
-          },
-          {
-            "selectors": [
-              "body"
-            ],
-            "declarations": [
-              {
-                "property": "padding",
-                "value": "1in"
-              },
-              {
-                "property": "border",
-                "value": "0.5pt solid #666"
-              }
-            ]
-          }
-        ]
-      }
+        }
     ]
 }

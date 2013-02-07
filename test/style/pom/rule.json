@@ -1,15 +1,16 @@
 {
     "rules": [
-      {
-        "selectors": [
-          "foo"
-        ],
-        "declarations": [
-          {
-            "property": "bar",
-            "value": "'baz'"
-          }
-        ]
-      }
+        {
+            "selectors": [
+                "foo"
+            ],
+            "declarations": [
+                {
+                    "property": "bar",
+                    "value": "'baz'",
+                    "important": false
+                }
+            ]
+        }
     ]
-  }
+}

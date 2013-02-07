@@ -18,6 +18,7 @@ describe('parse(str)', function () {
             var json = require(path.join(__dirname, 'style/pom/', file + '.json'));
             var pom = new POM(css);
             pom.parse();
+            pom.toString()
             var ret = JSON.stringify(pom.stylesheet, null, 2);
             ret.should.equal(JSON.stringify(json, null, 2));
         })

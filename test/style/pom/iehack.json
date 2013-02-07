@@ -1,3 +1,31 @@
 {
-    "rules": []
+    "rules": [
+        {
+            "selectors": [
+                ".color"
+            ],
+            "declarations": [
+                {
+                    "property": "color",
+                    "value": "yellow\\0",
+                    "important": false
+                },
+                {
+                    "property": "color",
+                    "value": "green\\9\\0",
+                    "important": false
+                },
+                {
+                    "property": "*color",
+                    "value": "blue",
+                    "important": false
+                },
+                {
+                    "property": "_color",
+                    "value": "red",
+                    "important": false
+                }
+            ]
+        }
+    ]
 }
