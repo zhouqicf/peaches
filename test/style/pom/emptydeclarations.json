@@ -1,0 +1,12 @@
+{
+    "rules": [
+        {
+            "selectors": [
+                "fdd"
+            ],
+            "declarations": [
+
+            ]
+        }
+    ]
+}
