@@ -1,0 +1,24 @@
+{
+    "rules": [
+        {
+            "selectors": ["html"],
+            "declarations": [
+                {
+                    "property": "background-color",
+                    "value": "#fff",
+                    "important": false
+                }
+            ]
+        },
+        {
+            "selectors": ["body"],
+            "declarations": [
+                {
+                    "property": "background-color",
+                    "value": "#fff",
+                    "important": false
+                }
+            ]
+        }
+    ]
+}
