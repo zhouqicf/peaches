@@ -6,8 +6,7 @@ var POM = require('../lib/pom'),
     fs = require('fs'),
     path = require('path'),
     read = fs.readFileSync,
-    readdir = fs.readdirSync,
-    minify = require('../lib/minify');
+    readdir = fs.readdirSync;
 
 describe('parse(str)', function () {
     'use strict';
@@ -36,4 +35,4 @@ describe('parse(str)', function () {
             ret2.should.equal(JSON.stringify(json, null, 2));
         });
     });
-})
+});
