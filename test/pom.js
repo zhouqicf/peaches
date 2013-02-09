@@ -1,8 +1,9 @@
 /**
  * Module dependencies.
  */
+require = require('./testutils');
 
-var POM = require('../lib/pom'),
+var POM = require('../lib/pom/index.js'),
     fs = require('fs'),
     path = require('path'),
     read = fs.readFileSync,
