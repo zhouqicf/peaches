@@ -8,12 +8,14 @@
                 {
                     "property": "color",
                     "value": "yellow\\0",
-                    "important": false
+                    "important": false,
+                    "hack": "ie8"
                 },
                 {
                     "property": "color",
                     "value": "green\\9\\0",
-                    "important": false
+                    "important": false,
+                    "hack": "ie9"
                 },
                 {
                     "property": "*color",
