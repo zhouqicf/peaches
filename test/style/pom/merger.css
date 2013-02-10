@@ -1,3 +1,32 @@
+/* 合并后只能出现一个charset */
+@charset "UTF-8";
 html, body {
     background-color: #fff;
+    padding: 0;
+}
+
+@import 'custom.css';
+@import "2.css" screen, projection;
+html {
+    color: #000;
+}
+
+body {
+    padding: 10px;
+}
+
+@charset
+'iso-8859-15'
+;
+
+@media print {
+    html {
+        background: #fff;
+        color: #000;
+    }
+
+    body {
+        padding: 1in;
+        border: 0.5pt solid #666;
+    }
 }

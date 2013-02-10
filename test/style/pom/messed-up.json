@@ -2,7 +2,7 @@
     "rules": [
         {
             "selectors": [
-                "body"
+                "p"
             ],
             "declarations": [
                 {
@@ -14,7 +14,7 @@
         },
         {
             "selectors": [
-                "body"
+                "em"
             ],
             "declarations": [
                 {
@@ -31,7 +31,7 @@
         },
         {
             "selectors": [
-                "body"
+                "i"
             ],
             "declarations": [
                 {

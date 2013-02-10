@@ -1,11 +1,69 @@
 {
     "rules": [
         {
+            "charset": "'iso-8859-15'"
+        },
+        {
+            "import": "'custom.css'"
+        },
+        {
+            "import": "\"2.css\" screen, projection"
+        },
+        {
+            "media": "print",
+            "rules": [
+                {
+                    "selectors": [
+                        "html"
+                    ],
+                    "declarations": [
+                        {
+                            "property": "background",
+                            "value": "#fff",
+                            "important": false
+                        },
+                        {
+                            "property": "color",
+                            "value": "#000",
+                            "important": false
+                        }
+                    ]
+                },
+                {
+                    "selectors": [
+                        "body"
+                    ],
+                    "declarations": [
+                        {
+                            "property": "padding",
+                            "value": "1in",
+                            "important": false
+                        },
+                        {
+                            "property": "border",
+                            "value": "0.5pt solid #666",
+                            "important": false
+                        }
+                    ]
+                }
+            ]
+        },
+        {
             "selectors": ["html"],
             "declarations": [
                 {
                     "property": "background-color",
                     "value": "#fff",
+                    "important": false
+                },
+                {
+                    "property": "padding",
+                    "value": "0",
+                    "important": false
+                },
+                {
+                    "property": "color",
+                    "value": "#000",
                     "important": false
                 }
             ]
@@ -17,8 +75,14 @@
                     "property": "background-color",
                     "value": "#fff",
                     "important": false
+                },
+                {
+                    "property": "padding",
+                    "value": "10px",
+                    "important": false
                 }
             ]
         }
     ]
 }
+

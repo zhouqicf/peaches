@@ -7,13 +7,13 @@
             "import": "\"bluish.css\" projection, tv"
         },
         {
-            "import": "\"custom.css\""
+            "import": "'custom.css'"
         },
         {
             "import": "\"common.css\" screen, projection"
         },
         {
-            "import": "\"landscape.css\" screen and (orientation:landscape)"
+            "import": "'landscape.css' screen and (orientation:landscape)"
         }
     ]
 }

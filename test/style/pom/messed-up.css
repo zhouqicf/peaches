@@ -1,9 +1,9 @@
-body { foo
+p { foo
 :
   'bar' }
 
-   body{foo:bar;bar:baz}
-   body
+   em{foo:bar;bar:baz}
+   i
    {
      foo
      :
