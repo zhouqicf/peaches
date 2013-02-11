@@ -20,9 +20,13 @@ body {
 ;
 
 @media print {
-    html {
+    html, p {
         background: #fff;
         color: #000;
+    }
+
+    p {
+        padding: 10px;
     }
 
     body {
