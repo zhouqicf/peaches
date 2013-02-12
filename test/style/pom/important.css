@@ -1,9 +1,25 @@
 image {
-    color: red     !important;
-    font: 'Times New Roman' !important  ;
+    color: red !important;
+    font: 'Times New Roman' !important;
 }
 
 p {
-    color: red !important   ;
+    color: red !important;
 }
 
+.test-1 {
+    margin: 10px;
+    margin: 20px;
+}
+
+.test-2 {
+    margin: 10px !important;
+    margin: 20px;
+}
+.test-3 {
+    margin: 10px !important;
+    margin: 20px;
+    margin: 30px;
+    margin: 10px 0 10px !important;
+    margin: 40px;
+}

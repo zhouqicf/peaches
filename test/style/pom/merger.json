@@ -104,6 +104,47 @@
                     "important": false
                 }
             ]
+        },
+        {
+            "selectors": [".test1"],
+            "declarations": [
+                {
+                    "property": "padding",
+                    "value": "20px",
+                    "important": false
+                },
+                {
+                    "property": "margin",
+                    "value": "10px",
+                    "important": false
+                },
+                {
+                    "property": "border",
+                    "value": "1px !important",
+                    "important": true
+                }
+            ]
+        }
+        ,
+        {
+            "selectors": [".test2"],
+            "declarations": [
+                {
+                    "property": "padding",
+                    "value": "10px",
+                    "important": false
+                },
+                {
+                    "property": "margin",
+                    "value": "0",
+                    "important": false
+                },
+                {
+                    "property": "border",
+                    "value": "1px !important",
+                    "important": true
+                }
+            ]
         }
     ]
 }

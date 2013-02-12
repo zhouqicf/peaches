@@ -28,6 +28,42 @@
                     "important": true
                 }
             ]
+        },
+        {
+            "selectors": [
+                ".test-1"
+            ],
+            "declarations": [
+                {
+                    "property": "margin",
+                    "value": "20px",
+                    "important": false
+                }
+            ]
+        },
+        {
+            "selectors": [
+                ".test-2"
+            ],
+            "declarations": [
+                {
+                    "property": "margin",
+                    "value": "10px !important",
+                    "important": true
+                }
+            ]
+        },
+        {
+            "selectors": [
+                ".test-3"
+            ],
+            "declarations": [
+                {
+                    "property": "margin",
+                    "value": "10px 0 10px !important",
+                    "important": true
+                }
+            ]
         }
     ]
 }
