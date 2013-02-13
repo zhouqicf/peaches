@@ -14,9 +14,9 @@ describe('POM', function () {
     'use strict';
     it('should getPropertyValue ', function () {
         var pom = new POM('body{padding:10px;}');
-        pom.getPropertyValue('body', 'padding').should.be.an.instanceOf(Array);
-        pom.getPropertyValue('body', 'padding').length.should.eql(1);
-        pom.getPropertyValue('body', 'padding')[0].should.eql('10px');
+        pom.getDeclarationValue('body', 'padding').should.be.an.instanceOf(Array);
+        pom.getDeclarationValue('body', 'padding').length.should.eql(1);
+        pom.getDeclarationValue('body', 'padding')[0].should.eql('10px');
     });
 });
 describe('parse(str)', function () {
