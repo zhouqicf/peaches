@@ -1,0 +1,224 @@
+{
+    "rules": [
+        {
+            "selectors": [
+                ".test-1"
+            ],
+            "declarations": [
+                {
+                    "property": "background-image",
+                    "value": "url(https://i.alipayobjects.com/e/201301/1CdeO2mZF6.png)"
+                }
+            ]
+        },
+        {
+            "selectors": [
+                ".test-2-1"
+            ],
+            "declarations": [
+                {
+                    "property": "background-repeat",
+                    "value": "no-repeat"
+                }
+            ]
+        },
+        {
+            "selectors": [
+                ".test-2-2"
+            ],
+            "declarations": [
+                {
+                    "property": "background-repeat",
+                    "value": "repeat-x"
+                }
+            ]
+        },
+        {
+            "selectors": [
+                ".test-3-1"
+            ],
+            "declarations": [
+                {
+                    "property": "background-attachment",
+                    "value": "fixed"
+                }
+            ]
+        },
+        {
+            "selectors": [
+                ".test-3-2"
+            ],
+            "declarations": [
+                {
+                    "property": "background-attachment",
+                    "value": "scroll"
+                }
+            ]
+        },
+        {
+            "selectors": [
+                ".test-4-1"
+            ],
+            "declarations": [
+                {
+                    "property": "background-origin",
+                    "value": "border-box"
+                }
+            ]
+        },
+        {
+            "selectors": [
+                ".test-5-1"
+            ],
+            "declarations": [
+                {
+                    "property": "background-position",
+                    "value": "10px 5px"
+                }
+            ]
+        },
+        {
+            "selectors": [
+                ".test-5-2"
+            ],
+            "declarations": [
+                {
+                    "property": "background-position",
+                    "value": "0 5px"
+                }
+            ]
+        },
+        {
+            "selectors": [
+                ".test-5-3"
+            ],
+            "declarations": [
+                {
+                    "property": "background-position",
+                    "value": "0 center"
+                }
+            ]
+        },
+        {
+            "selectors": [
+                ".test-5-4"
+            ],
+            "declarations": [
+                {
+                    "property": "background-position",
+                    "value": "right bottom"
+                }
+            ]
+        },
+        {
+            "selectors": [
+                ".test-5-5"
+            ],
+            "declarations": [
+                {
+                    "property": "background-position",
+                    "value": "right 50%"
+                }
+            ]
+        },
+        {
+            "selectors": [
+                ".test-5-6"
+            ],
+            "declarations": [
+                {
+                    "property": "background-position",
+                    "value": "0 50%"
+                }
+            ]
+        }
+        ,
+        {
+            "selectors": [
+                ".test-6-1"
+            ],
+            "declarations": [
+                {
+                    "property": "background-color",
+                    "value": "#fff000"
+                }
+            ]
+        }
+        ,
+        {
+            "selectors": [
+                ".test-6-2"
+            ],
+            "declarations": [
+                {
+                    "property": "background-color",
+                    "value": "#fae"
+                }
+            ]
+        },
+        {
+            "selectors": [
+                ".test-6-3"
+            ],
+            "declarations": [
+                {
+                    "property": "background-color",
+                    "value": "rgb(255, 245, 123)"
+                }
+            ]
+        },
+        {
+            "selectors": [
+                ".test-6-4"
+            ],
+            "declarations": [
+                {
+                    "property": "background-color",
+                    "value": "rgb(255, 0, 123)"
+                }
+            ]
+        },
+        {
+            "selectors": [
+                ".test-6-5"
+            ],
+            "declarations": [
+                {
+                    "property": "background-color",
+                    "value": "rgba(255, 0, 123, 0.8)"
+                }
+            ]
+        },
+        {
+            "selectors": [
+                ".test-6-6"
+            ],
+            "declarations": [
+                {
+                    "property": "background-color",
+                    "value": "maroon"
+                }
+            ]
+        },
+        {
+            "selectors": [
+                ".test-7-1"
+            ],
+            "declarations": [
+                {
+                    "property": "background-image",
+                    "value": "url(https://i.alipayobjects.com/e/201301/1CdeO2mZF6.png)"
+                },
+
+                {
+                    "property": "background-repeat",
+                    "value": "no-repeat"
+                },
+                {
+                    "property": "background-color",
+                    "value": "rgb(255,255,0)"
+                }
+            ]
+        }
+    ]
+}

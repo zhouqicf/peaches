@@ -7,8 +7,7 @@
             "declarations": [
                 {
                     "property": "bar",
-                    "value": "baz",
-                    "important": false
+                    "value": "baz"
                 }
             ]
         }

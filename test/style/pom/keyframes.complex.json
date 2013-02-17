@@ -10,13 +10,11 @@
                     "declarations": [
                         {
                             "property": "top",
-                            "value": "0",
-                            "important": false
+                            "value": "0"
                         },
                         {
                             "property": "left",
-                            "value": "0",
-                            "important": false
+                            "value": "0"
                         }
                     ]
                 },
@@ -27,8 +25,7 @@
                     "declarations": [
                         {
                             "property": "top",
-                            "value": "50px",
-                            "important": false
+                            "value": "50px"
                         }
                     ]
                 },
@@ -41,8 +38,7 @@
                     "declarations": [
                         {
                             "property": "left",
-                            "value": "50px",
-                            "important": false
+                            "value": "50px"
                         }
                     ]
                 },
@@ -53,13 +49,11 @@
                     "declarations": [
                         {
                             "property": "top",
-                            "value": "100px",
-                            "important": false
+                            "value": "100px"
                         },
                         {
                             "property": "left",
-                            "value": "100%",
-                            "important": false
+                            "value": "100%"
                         }
                     ]
                 }

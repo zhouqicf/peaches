@@ -1,6 +1,6 @@
 @media screen, projection {
     html {
-        background: #fffef0;
+        abackground: #fffef0;
         color: #300;
     }
 
@@ -11,13 +11,18 @@
 }
 
 @media print {
-    html {
-        background: #fff;
+    html, .test {
+        abackground: #fff;
         color: #000;
     }
 
     body {
         padding: 1in;
         border: 0.5pt solid #666;
+    }
+
+    .test {
+        color: #fff;
+        padding: 10px;
     }
 }

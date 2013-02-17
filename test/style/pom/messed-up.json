@@ -7,8 +7,7 @@
             "declarations": [
                 {
                     "property": "foo",
-                    "value": "'bar'",
-                    "important": false
+                    "value": "'bar'"
                 }
             ]
         },
@@ -19,13 +18,11 @@
             "declarations": [
                 {
                     "property": "foo",
-                    "value": "bar",
-                    "important": false
+                    "value": "bar"
                 },
                 {
                     "property": "bar",
-                    "value": "baz",
-                    "important": false
+                    "value": "baz"
                 }
             ]
         },
@@ -36,13 +33,11 @@
             "declarations": [
                 {
                     "property": "foo",
-                    "value": "bar",
-                    "important": false
+                    "value": "bar"
                 },
                 {
                     "property": "bar",
-                    "value": "baz",
-                    "important": false
+                    "value": "baz"
                 }
             ]
         }

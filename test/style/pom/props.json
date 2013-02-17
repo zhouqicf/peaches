@@ -7,18 +7,15 @@
             "declarations": [
                 {
                     "property": "are",
-                    "value": "'all'",
-                    "important": false
+                    "value": "'all'"
                 },
                 {
                     "property": "the-species",
-                    "value": "called \"ferrets\"",
-                    "important": false
+                    "value": "called \"ferrets\""
                 },
                 {
                     "property": "*even",
-                    "value": "'ie crap'",
-                    "important": false
+                    "value": "'ie crap'"
                 }
             ]
         }

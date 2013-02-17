@@ -10,13 +10,11 @@
                     "declarations": [
                         {
                             "property": "background",
-                            "value": "#fffef0",
-                            "important": false
+                            "value": "#fffef0"
                         },
                         {
                             "property": "color",
-                            "value": "#300",
-                            "important": false
+                            "value": "#300"
                         }
                     ]
                 },
@@ -27,13 +25,11 @@
                     "declarations": [
                         {
                             "property": "max-width",
-                            "value": "35em",
-                            "important": false
+                            "value": "35em"
                         },
                         {
                             "property": "margin",
-                            "value": "0 auto",
-                            "important": false
+                            "value": "0 auto"
                         }
                     ]
                 }
@@ -49,13 +45,11 @@
                     "declarations": [
                         {
                             "property": "background",
-                            "value": "#fff",
-                            "important": false
+                            "value": "#fff"
                         },
                         {
                             "property": "color",
-                            "value": "#000",
-                            "important": false
+                            "value": "#000"
                         }
                     ]
                 },
@@ -66,13 +60,11 @@
                     "declarations": [
                         {
                             "property": "padding",
-                            "value": "1in",
-                            "important": false
+                            "value": "1in"
                         },
                         {
                             "property": "border",
-                            "value": "0.5pt solid #666",
-                            "important": false
+                            "value": "0.5pt solid #666"
                         }
                     ]
                 }

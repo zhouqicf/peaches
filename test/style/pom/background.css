@@ -1,0 +1,82 @@
+/* background-image */
+.test-1 {
+    background: url('https://i.alipayobjects.com/e/201301/1CdeO2mZF6.png');
+}
+
+/* background-repeat */
+.test-2-1 {
+    background: no-repeat;
+}
+
+.test-2-2 {
+    background: repeat-x;
+}
+
+/* background-attachment */
+.test-3-1 {
+    background: fixed;
+}
+
+.test-3-2 {
+    background: scroll;
+}
+
+/* background-origin */
+.test-4-1 {
+    background: border-box;
+}
+
+/* background-position */
+.test-5-1 {
+    background: 10px 5px;
+}
+
+/* left 设置为0 */
+.test-5-2 {
+    background: left 5px;
+}
+
+.test-5-3 {
+    background: left center;
+}
+
+.test-5-4 {
+    background: right bottom;
+}
+
+.test-5-5 {
+    background: right;
+}
+
+.test-5-6 {
+    background: left;
+}
+
+/* background-color */
+.test-6-1 {
+    background: #fff000;
+}
+
+.test-6-2 {
+    background: #fae;
+}
+
+.test-6-3 {
+    background: rgb(255, 245, 123);
+}
+
+.test-6-4 {
+    background: rgb(255, 0, 123);
+}
+
+.test-6-5 {
+    background: rgba(255, 0, 123, 0.8);
+}
+
+.test-6-6 {
+    background: maroon;
+}
+
+.test-7-1{
+    background:rgb(255,255,0) url('https://i.alipayobjects.com/e/201301/1CdeO2mZF6.png') no-repeat;
+}

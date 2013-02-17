@@ -10,8 +10,7 @@
                     "declarations": [
                         {
                             "property": "opacity",
-                            "value": "0",
-                            "important": false
+                            "value": "0"
                         }
                     ]
                 },
@@ -22,8 +21,7 @@
                     "declarations": [
                         {
                             "property": "opacity",
-                            "value": "1",
-                            "important": false
+                            "value": "1"
                         }
                     ]
                 }

@@ -6,9 +6,8 @@
             ],
             "declarations": [
                 {
-                    "property": "background",
-                    "value": "url('some;stuff;here') 50% 50% no-repeat",
-                    "important": false
+                    "property": "abackground",
+                    "value": "url('some;stuff;here') 50% 50% no-repeat"
                 }
             ]
         }
