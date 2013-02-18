@@ -21,10 +21,10 @@ var config = {
 var srv = http.createServer(function (req, res) {
     'use strict';
     res.writeHead(200, {'Content-Type': 'text/plain'});
-    var css = fs.readFileSync('./test/style/peaches.css').toString();
+    var css = fs.readFileSync('./test/style/peaches/all.css').toString();
     peaches(css, config, function (err, styleText) {
         res.end(cssbeautify(styleText.toString()));
-    },'test');
+    }, 'test');
 });
 // now that server is running
 srv.listen(1337, '127.0.0.1');
