@@ -1,0 +1,17 @@
+p {
+    background: url('https://i.alipayobjects.com/e/201301/25DFxqiuiC.png');
+}
+
+span {
+    background: url(https://i.alipayobjects.com/e/201208/3FnlCgAmxt.png);
+}
+
+@media screen, projection {
+    html {
+        background: url(https://i.alipayobjects.com/e/201208/3FnlCgAmxt.png);
+    }
+
+    body {
+        background: url(https://i.alipayobjects.com/e/201208/3FnlCgAmxt.png);
+    }
+}
