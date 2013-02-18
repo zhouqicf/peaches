@@ -1,7 +1,6 @@
 @media screen, projection{ html
   
   {
-background: #fffef0;
     color:#300;
   }
   body
@@ -17,7 +16,6 @@ background: #fffef0;
 @media print
 {
               html {
-              background: #fff;
               color: #000;
               }
               body {

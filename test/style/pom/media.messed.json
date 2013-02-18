@@ -9,10 +9,6 @@
                     ],
                     "declarations": [
                         {
-                            "property": "background",
-                            "value": "#fffef0"
-                        },
-                        {
                             "property": "color",
                             "value": "#300"
                         }
@@ -43,10 +39,6 @@
                         "html"
                     ],
                     "declarations": [
-                        {
-                            "property": "background",
-                            "value": "#fff"
-                        },
                         {
                             "property": "color",
                             "value": "#000"

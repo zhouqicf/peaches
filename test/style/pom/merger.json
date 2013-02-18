@@ -18,12 +18,12 @@
                     ],
                     "declarations": [
                         {
-                            "property": "background",
-                            "value": "#fff" 
+                            "property": "color",
+                            "value": "#000"
                         },
                         {
-                            "property": "color",
-                            "value": "#000" 
+                            "property": "background-color",
+                            "value": "#fff"
                         }
                     ]
                 },
@@ -33,16 +33,16 @@
                     ],
                     "declarations": [
                         {
-                            "property": "background",
-                            "value": "#fff" 
-                        },
-                        {
                             "property": "color",
-                            "value": "#000" 
+                            "value": "#000"
                         },
                         {
                             "property": "padding",
-                            "value": "10px" 
+                            "value": "10px"
+                        },
+                        {
+                            "property": "background-color",
+                            "value": "#fff"
                         }
                     ]
                 },
@@ -53,11 +53,11 @@
                     "declarations": [
                         {
                             "property": "padding",
-                            "value": "1in"  
+                            "value": "1in"
                         },
                         {
                             "property": "border",
-                            "value": "0.5pt solid #666" 
+                            "value": "0.5pt solid #666"
                         }
                     ]
                 }
