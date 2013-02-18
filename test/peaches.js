@@ -3,11 +3,38 @@ var fs = require('fs'),
     path = require('path');
 
 require = require('./testutils');
-var Peaches = require('../lib/peaches.js');
-
+var peaches = require('../lib/peaches.js');
+var cssbeautify = require('cssbeautify');
+var config = {
+    "sort": "h",
+    "format": "png8",
+    "autoReload": false,
+    "model": "local",
+    "server": {
+        "name": "local",
+        "port": 8099,
+        "root": "/Users/liuqin/.peaches/images",
+        "tmp": "/Users/liuqin/.peaches/tmp",
+        "baseURI": "http://127.0.0.1:8099/"
+    }
+};
 describe('Peaches', function () {
     'use strict';
-    it('普通样式表', function (next) {
-        next();
+    fs.readdirSync(path.join(__dirname, './style/peaches/')).forEach(function (file) {
+        if (file.indexOf('out.css') > -1) {
+            return;
+        }
+        file = path.basename(file, '.css');
+        it('should peaches ' + file, function (next) {
+            var css = fs.readFileSync(path.join(__dirname, 'style/peaches/', file + '.css'), 'utf8');
+            peaches(css, config, function (err, pom) {
+                var styleText = cssbeautify(pom.toString());
+                var outStyleText = fs.readFileSync(path.join(__dirname, 'style/peaches/', file + '.out.css'), 'utf8');
+                styleText.should.equal(cssbeautify(outStyleText));
+                next();
+            });
+
+        });
     });
+
 });
