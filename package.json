@@ -21,8 +21,7 @@
         }
     ],
     "dependencies": {
-        "cssom": "~0.2.5",
-        "async": "~0.1.22",
+        "async": "~0.2.5",
         "underscore": "~1.4.2",
         "colorful": "~1.1.0",
         "commander": "~1.0.5",
