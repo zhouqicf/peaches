@@ -1,6 +1,6 @@
 @charset "utf-8";
 
-/* 
+/*
     @名称: base
     @功能: 重设浏览器默认样式
 */
@@ -18,7 +18,7 @@ body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input
 }
 
 /* 重设 HTML5 标签, IE 需要在 js 中 createElement(TAG) */
-article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section { 
+article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section {
     display:block;
 }
 

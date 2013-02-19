@@ -1,14 +1,9 @@
 {
-    "output":{
-        "./css/dist/peaches.css":[
-            "./css/src/base.css",
-            "./css/src/button.css",
-            "./css/src/index.css",
-            "./css/src/tmall_icon.css"
-
-        ],
-        "./css/dist/v1.css":[
-            "./css/src/common-v1.css"
+    "output": {
+        "./static/dist/peaches.css": [
+            "./static/src/reset.css",
+            "./static/src/layout.css",
+            "./static/src/01.css"
         ]
     }
 }

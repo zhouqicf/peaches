@@ -1,0 +1,1 @@
+http://example.peaches.net 指的就是该目录，如果需要运行测试用例，请配置服务。
