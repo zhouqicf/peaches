@@ -1,0 +1,30 @@
+@media screen, projection {
+    html {
+        background: url(https://i.alipayobjects.com/e/201208/3FnlCgAmxt.png);
+        color: #300;
+    }
+
+    body {
+        background: url(https://i.alipayobjects.com/combo.jpg?d=apps/24&t=10015,10017,10018,10023,10048,10051);
+        max-width: 35em;
+        margin: 0 auto;
+    }
+}
+
+@media print {
+    html, .test {
+        color: #000;
+        background: url(https://i.alipayobjects.com/combo.jpg?d=apps/24&t=10015);
+    }
+
+    body {
+        padding: 1in;
+        border: 0.5pt solid #666;
+    }
+
+    .test {
+        color: #fff;
+        padding: 10px;
+        background: url(https://i.alipayobjects.com/combo.jpg?d=apps/24&t=10017);
+    }
+}

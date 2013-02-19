@@ -1,0 +1,38 @@
+@media screen, projection {
+    html, body {
+        background-image: url(http://127.0.0.1:8099/sprite-peaches-e23629eba34b1b09a92f33047427be99-1-png8.png);
+    }
+
+    html {
+        color: #300;
+        background-position: -25px 0;
+    }
+
+    body {
+        max-width: 35em;
+        margin: 0 auto;
+        background-position: 0 0;
+    }
+}
+
+@media print {
+    html, .test {
+        background-image: url(http://127.0.0.1:8099/sprite-peaches-f7531e2d0ea27233ce00b5f01c5bf335-1-png8.png);
+    }
+
+    html {
+        color: #000;
+        background-position: 0 0;
+    }
+
+    .test {
+        color: #fff;
+        padding: 10px;
+        background-position: -25px 0;
+    }
+
+    body {
+        padding: 1in;
+        border: 0.5pt solid #666;
+    }
+}
