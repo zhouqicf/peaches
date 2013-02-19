@@ -21,7 +21,7 @@ var config = {
 var srv = http.createServer(function (req, res) {
     'use strict';
     res.writeHead(200, {'Content-Type': 'text/plain'});
-    var css = fs.readFileSync('./test/style/peaches/all.css').toString();
+    var css = fs.readFileSync('./test/style/peaches/charset.css').toString();
     peaches(css, config, function (err, styleText) {
         res.end(cssbeautify(styleText.toString()));
     }, 'debug');

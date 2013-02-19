@@ -1,0 +1,1056 @@
+.the-alipay-global {
+  font: normal 12px/1.5 Verdana, Arial, "\5b8b\4f53", sans-serif;
+}
+.the-alipay-global ol,
+.the-alipay-global ul {
+  list-style: none;
+}
+.the-alipay-global a {
+  text-decoration: none;
+  color: #08c;
+}
+.the-alipay-global .sl-alpha // 背景纯色透明 {
+  padding: 0 2px 2px;
+  border-top: 2px solid #e0e0e0;
+  background: rgba(0,0,0,0.1);
+  filter: progid:DXImageTransform.Microsoft.Gradient(GradientType=0,StartColorStr=#1b000000,EndColorStr=#1b000000);;
+}
+.the-alipay-global .fn-clear {
+  zoom: 1;
+}
+.the-alipay-global .fn-clearafter {
+  visibility: hidden;
+  display: block;
+/*
+  icon.png: Fail to Upload it, sorry.
+  tip.png: Fail to Upload it, sorry.
+  ➠ https://i.alipayobjects.com/e/201301/22clowBsuq.png » cake.png
+     
+     */
+  font-size: 0;
+  content: "";
+  clear: both;
+  height: 0;
+}
+.the-alipay-global .fn-hide {
+  display: none;
+/*
+  icon.png: Fail to Upload it, sorry.
+  tip.png: Fail to Upload it, sorry.
+  ➠ https://i.alipayobjects.com/e/201301/22clowBsuq.png » cake.png
+     
+     */
+}
+.the-alipay-global * {
+  margin: 0;
+  padding: 0;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 100%;
+}
+:root .the-alipay-global .sl-alpha {
+  filter: progid:DXImageTransform.Microsoft.Gradient(GradientType=0,StartColorStr=#1b000000,EndColorStr=#1b000000);;
+}
+#global-header-area {
+  padding: 7px 0;
+}
+#global-header-area .link {
+  float: left;
+  padding: 18px 0 0 0;
+}
+#global-header-nav {
+  margin-bottom: 15px;
+}
+#global-topLink {
+  float: right;
+  height: 38px;
+}
+.global-logo {
+  float: left;
+  padding-top: 7px;
+}
+.global-logo a {
+  display: block;
+/*
+  icon.png: Fail to Upload it, sorry.
+  tip.png: Fail to Upload it, sorry.
+  ➠ https://i.alipayobjects.com/e/201301/22clowBsuq.png » cake.png
+     
+     */
+  width: 100px;
+  height: 38px;
+  background: transparent url("https://i.alipayobjects.com/e/201301/22t9jTLuY8.png") no-repeat 0 0;
+}
+.global-logo a span {
+  display: none;
+/*
+  icon.png: Fail to Upload it, sorry.
+  tip.png: Fail to Upload it, sorry.
+  ➠ https://i.alipayobjects.com/e/201301/22clowBsuq.png » cake.png
+     
+     */
+}
+.global-link {
+  float: left;
+  height: 43px;
+  line-height: 48px;
+}
+.global-link .global-link-hasflash {
+  vertical-align: 12px;
+}
+.global-separator {
+  font-weight: normal;
+  color: #ccc;
+}
+.global-separator-pd {
+  color: #ccc;
+  padding: 0 5px;
+}
+.global-nav {
+  position: relative;
+  overflow: hidden;
+  height: 80px;
+  background-image: url("https://i.alipayobjects.com/e/201301/22dvMLK5rJ.png");
+  background-repeat: repeat-x;
+}
+.global-nav a:hover {
+  text-decoration: none;
+  cursor: pointer;
+}
+.global-nav-cnt {
+  height: 100%;
+  background-image: url("https://i.alipayobjects.com/e/201301/22e6gSwSGL.png");
+  background-repeat: no-repeat;
+  padding-left: 10px;
+}
+.global-nav-cnt ul {
+  height: 100%;
+  background-image: url("https://i.alipayobjects.com/e/201301/22dsUrBqqC.png");
+  background-repeat: no-repeat;
+  background-position: right 0;
+}
+.global-nav-cnt ul .global-subnav {
+  height: auto;
+  background: none;
+}
+.global-nav-master,
+.global-nav-master-other {
+  float: left;
+  margin: 7px 5px 0 0;
+}
+.global-nav-master-other {
+  margin-right: 0;
+}
+a.global-nav-master-a {
+  float: left;
+  font-size: 14px;
+  text-align: center;
+  color: #fff;
+}
+a.global-nav-master-a strong {
+  padding: 8px 15px 13px;
+  font-size: 14px;
+  height: 14px;
+  line-height: 14px;
+  float: left;
+  font-weight: bold;
+}
+a.global-nav-master-a:hover,
+a.global-nav-master-a:active {
+  background-image: url("https://i.alipayobjects.com/e/201301/22colCBraX.png");
+  color: #fff;
+}
+a.global-nav-master-a:hover strong {
+  background-image: url("https://i.alipayobjects.com/e/201301/22dsQ3jdED.png");
+  background-position: right 0;
+  background-repeat: no-repeat;
+}
+.global-nav-master-other em {
+  padding: 8px 0 13px;
+  color: #fef9f3;
+  font-size: 14px;
+  height: 14px;
+  line-height: 14px;
+  float: left;
+  font-weight: normal;
+}
+.global-nav-master-other a.global-nav-master-a {
+  margin-right: 10px;
+}
+.global-nav-master-other a.global-nav-master-a:hover {
+  background: none;
+}
+.global-nav-master-other a.global-nav-master-a:hover em {
+  text-decoration: underline;
+}
+.global-subnav {
+  display: none;
+/*
+  icon.png: Fail to Upload it, sorry.
+  tip.png: Fail to Upload it, sorry.
+  ➠ https://i.alipayobjects.com/e/201301/22clowBsuq.png » cake.png
+     
+     */
+  position: absolute;
+  top: 46px;
+  left: 10px;
+}
+p.global-subnav {
+  padding: 7px 15px;
+}
+p.global-subnav .global-subnav-title {
+  margin-right: 10px;
+  font-weight: bold;
+  color: #808080;
+}
+p.global-subnav a {
+  color: #08c;
+  margin: 0px 2px;
+}
+p.global-subnav a:hover {
+  text-decoration: underline;
+  background: none;
+  color: #08c;
+}
+ul.global-subnav li {
+  float: left;
+  margin-right: 10px;
+}
+ul.global-subnav a {
+  float: left;
+  color: #868686;
+  text-align: center;
+}
+ul.global-subnav a span {
+  overflow: hidden;
+  padding: 0 15px;
+  height: 28px;
+  line-height: 32px;
+  float: left;
+}
+ul.global-subnav a:hover {
+  color: #868686;
+  background-image: url("https://i.alipayobjects.com/e/201301/22eDQ8WJcS.png");
+  background-repeat: no-repeat;
+}
+ul.global-subnav a:hover span {
+  background-image: url("https://i.alipayobjects.com/e/201301/22eGTX7uMf.png");
+  background-repeat: no-repeat;
+  background-position: right 0;
+}
+ul.global-subnav .global-subnav-current a {
+  background-image: url("https://i.alipayobjects.com/e/201301/22eGHby9LR.png");
+  background-repeat: no-repeat;
+}
+ul.global-subnav .global-subnav-current a span {
+  background-image: url("https://i.alipayobjects.com/e/201301/22eGHcMqIn.png");
+  background-repeat: no-repeat;
+  background-position: right 0;
+}
+.global-nav-master-current a.global-nav-master-a {
+  color: #696969;
+  background-image: url("https://i.alipayobjects.com/e/201301/22cltdcNXA.png");
+}
+.global-nav-master-current a.global-nav-master-a strong {
+  background-image: url("https://i.alipayobjects.com/e/201301/22do4nqUc9.png");
+  background-repeat: no-repeat;
+  background-position: right 0;
+}
+.global-nav-master-current a.global-nav-master-a em {
+  color: #696969;
+  font-weight: bold;
+  padding: 8px 15px 13px;
+  background-position: right -275px;
+}
+.global-nav-master-current a.global-nav-master-a:hover {
+  background-position: 0 -240px;
+  color: #696969;
+}
+.global-nav-master-current a.global-nav-master-a:active {
+  color: #696969;
+}
+.global-nav-master-current .global-subnav {
+  display: block;
+/*
+  icon.png: Fail to Upload it, sorry.
+  tip.png: Fail to Upload it, sorry.
+  ➠ https://i.alipayobjects.com/e/201301/22clowBsuq.png » cake.png
+     
+     */
+}
+.global-nav-nosub {
+  height: 42px;
+}
+.global-nav-separator {
+  color: #f9d3ae;
+  font-size: 14px;
+  line-height: 14px;
+  font-weight: bold;
+  float: left;
+  margin: 13px 5px 0 0;
+}
+.global-nav-separator-dashed {
+  text-indent: -9999px;
+  height: 12px;
+  float: left;
+  border-left: 2px dotted #fdf2e7;
+  margin: 15px 15px 0 0;
+  overflow: hidden;
+}
+.global-feedback {
+  position: fixed;
+  top: 180px;
+  right: 0;
+  _position: absolute;
+  width: 30px;
+  z-index: 999;
+}
+.global-feedback a {
+  position: relative;
+  cursor: pointer;
+  display: block;
+/*
+  icon.png: Fail to Upload it, sorry.
+  tip.png: Fail to Upload it, sorry.
+  ➠ https://i.alipayobjects.com/e/201301/22clowBsuq.png » cake.png
+     
+     */
+  overflow: hidden;
+  text-indent: -999em;
+  width: 30px;
+  height: 89px;
+  background: url("https://i.alipayobjects.com/e/201301/22clpCBoOa.png") no-repeat scroll transparent;
+  background-position: -30px 0;
+  opacity: 0.7;
+  filter: alpha(opacity=70);
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=70)";
+  -webkit-transition: all 0.25s ease-in;
+  -moz-transition: all 0.25s ease-in;
+  -o-transition: all 0.25s ease-in;
+  -ms-transition: all 0.25s ease-in;
+  transition: all 0.25s ease-in;
+}
+.global-feedback a:hover {
+  opacity: 1;
+  -ms-filter: none;
+  filter: none;
+  -webkit-transition: all 0.25s ease-in;
+  -moz-transition: all 0.25s ease-in;
+  -o-transition: all 0.25s ease-in;
+  -ms-transition: all 0.25s ease-in;
+  transition: all 0.25s ease-in;
+}
+.global-reset {
+  font: normal 12px/1.5 Verdana, Arial, "\5b8b\4f53", sans-serif;
+}
+.global-reset * {
+  margin: 0;
+  padding: 0;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 100%;
+}
+.global-reset ol,
+.global-reset ul {
+  list-style: none;
+}
+.global-reset a {
+  text-decoration: none;
+  color: #666;
+}
+.global-reset a:hover {
+  text-decoration: underline;
+  color: #08c;
+}
+.global-reset .fn-clear {
+  zoom: 1;
+}
+.global-reset .fn-clear:before,
+.global-reset .fn-clear:after {
+  content: "";
+  display: table;
+/*
+  icon.png: Fail to Upload it, sorry.
+  tip.png: Fail to Upload it, sorry.
+  ➠ https://i.alipayobjects.com/e/201301/22clowBsuq.png » cake.png
+     
+     */
+}
+.global-reset .fn-clear:after {
+  clear: both;
+}
+.global-hide {
+  display: none;
+/*
+  icon.png: Fail to Upload it, sorry.
+  tip.png: Fail to Upload it, sorry.
+  ➠ https://i.alipayobjects.com/e/201301/22clowBsuq.png » cake.png
+     
+     */
+}
+.global-loading {
+  height: 50px;
+  background: url("https://i.alipayobjects.com/e/201205/2bW1qj1jon.gif") center no-repeat;
+}
+.global-top {
+  height: 26px;
+  border-bottom: 1px solid #dcdcdc;
+  background: #f7f6f6;
+}
+.global-top-container {
+  width: 990px;
+  margin: auto;
+}
+.global-top-left {
+  float: left;
+}
+.global-top-right {
+  float: right;
+}
+.global-top-item {
+  float: left;
+  border-right: 1px solid #e2e2e2;
+  border-left: 1px solid #fcfcfc;
+  padding: 0 15px;
+  margin-top: 4px;
+}
+.global-top-item-hover {
+  position: relative;
+  z-index: 101;
+  padding: 4px 16px 0;
+  border-right-color: #ccc;
+  margin: 0 -1px;
+  border-left-color: #ccc;
+  background: #fff;
+  -webkit-box-shadow: 1px -1px 2px #ccc;
+  box-shadow: 1px -1px 2px #ccc;
+}
+.global-top-item-hover .global-top-angle {
+  -webkit-transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+.global-top-item-first {
+  padding-left: 0;
+  border-left: none;
+}
+.global-top-item-last {
+  padding-right: 0;
+  border-right: none;
+}
+.global-top-text,
+.global-top-link {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+  height: 16px;
+  line-height: 16px;
+  vertical-align: middle;
+  *margin-top: 2px;
+}
+.global-top-text {
+  color: #999;
+}
+.global-top-overlay {
+  border: 1px solid #ccc;
+  padding: 10px 15px;
+  background: #fff;
+  -webkit-box-shadow: 1px 1px 6px #ccc;
+  box-shadow: 1px 1px 6px #ccc;
+}
+.global-top-overlay-item {
+  padding: 5px 0;
+}
+.global-top-overlay-item-line {
+  margin-bottom: 5px;
+  padding-bottom: 7px;
+  border-bottom: 1px solid #f2f2f2;
+}
+.global-top-seperator {
+  padding: 0 3px;
+}
+.global-top-angle {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+  width: 9px;
+  height: 16px;
+  background: url("https://i.alipayobjects.com/e/201301/22eXJGF6Xd.png") no-repeat 0 6px;
+  margin-left: 2px;
+  overflow: hidden;
+  vertical-align: middle;
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  -ms-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -webkit-transition: -webkit-transform 1s ease;
+  -moz-transition: -moz-transform 1s ease;
+  -o-transition: -o-transform 1s ease;
+  -ms-transition: -ms-transform 1s ease;
+  transition: transform 1s ease;
+}
+.global-button {
+  padding: 0 0;
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+  position: relative;
+  text-align: center;
+  text-decoration: none !important;
+  vertical-align: middle;
+  overflow: visible;
+  cursor: pointer;
+}
+.global-button .global-button-text {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+  font-family: Verdana, "\5b8b\4f53", "\9ED1\4F53", sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  white-space: nowrap;
+  cursor: pointer;
+  border: 0;
+  text-decoration: none;
+  overflow: visible;
+}
+.global-button .global-button-text:hover {
+  text-decoration: none;
+}
+.global-button-sorange {
+  background-image: url("https://i.alipayobjects.com/e/201301/22cods20O5.png");
+}
+.global-button-sorange .global-button-text {
+  padding: 3px 12px 4px 12px;
+  font-size: 12px;
+  background-image: url("https://i.alipayobjects.com/e/201301/22codsazk5.png");
+  background-repeat: no-repeat;
+  background-position: right 0;
+  color: #fff;
+}
+.global-button-sorange:hover {
+  background-image: url("https://i.alipayobjects.com/e/201301/22clmOU95o.png");
+}
+.global-button-sorange:hover .global-button-text {
+  background-image: url("https://i.alipayobjects.com/e/201301/22daHMf00S.png");
+  background-position: right 0;
+}
+.global-button-swhite {
+  background-image: url("https://i.alipayobjects.com/e/201301/22clon3460.png");
+}
+.global-button-swhite .global-button-text {
+  padding: 3px 12px 4px 12px;
+  font-size: 12px;
+  background-image: url("https://i.alipayobjects.com/e/201301/22cogI9vhN.png");
+  background-repeat: no-repeat;
+  background-position: right 0;
+  color: #595959;
+}
+.global-button-swhite:hover {
+  background-image: url("https://i.alipayobjects.com/e/201301/22de6NU7Zc.png");
+}
+.global-button-swhite:hover .global-button-text {
+  background-image: url("https://i.alipayobjects.com/e/201301/22ddmUdzls.png");
+  background-position: right 0;
+}
+.global-button-sorange {
+  margin-right: 10px;
+}
+.global-icon {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+  width: 16px;
+  height: 16px;
+  margin-right: 4px;
+  vertical-align: middle;
+}
+.global-icon-mobile {
+  background-image: url("https://i.alipayobjects.com/e/201301/22rZId8I7p.png");
+  background-position: -27px 1px;
+}
+.global-icon-switch {
+  background-image: url("https://i.alipayobjects.com/e/201301/22rZId8I7p.png");
+  background-position: -42px 1px;
+}
+.global-icon-return {
+  background-image: url("https://i.alipayobjects.com/e/201301/22rZId8I7p.png");
+  background-position: -60px 1px;
+}
+.global-icon-question {
+  background-image: url("https://i.alipayobjects.com/e/201301/22rZId8I7p.png");
+  background-position: -76px 0;
+}
+.global-icon-selfhelp {
+  background-image: url("https://i.alipayobjects.com/e/201301/22rZId8I7p.png");
+  background-position: -116px 0;
+}
+.global-icon-abc {
+  background-image: url("https://i.alipayobjects.com/e/201301/22rZId8I7p.png");
+  background-position: -96px 0;
+}
+.global-icon-birth {
+  background-image: url("https://i.alipayobjects.com/e/201301/22rZId8I7p.png");
+  background-position: -134px 0;
+}
+.global-account {
+  position: relative;
+  height: 42px;
+  padding-left: 50px;
+  border-bottom: 1px solid #f2f2f2;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+}
+.global-account .global-account-img {
+  position: absolute;
+  top: 2px;
+  left: 0;
+}
+.global-account .global-account-img img {
+  border: none;
+  width: 40px;
+  height: 40px;
+}
+.global-account .global-account-robot {
+  position: absolute;
+  top: 30px;
+  left: 30px;
+  display: block;
+/*
+  icon.png: Fail to Upload it, sorry.
+  tip.png: Fail to Upload it, sorry.
+  ➠ https://i.alipayobjects.com/e/201301/22clowBsuq.png » cake.png
+     
+     */
+  width: 16px;
+  height: 14px;
+  background-image: url("https://i.alipayobjects.com/e/201301/22eV65JorV.png");
+}
+.global-account .global-account-robot:hover {
+  background-image: url("https://i.alipayobjects.com/e/201301/22eSEbbPoy.png");
+}
+.global-account .global-account-balance {
+  margin-right: 5px;
+  color: #f98d00;
+  font-size: 18px;
+}
+.global-account .global-account-showbalance {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+  background: #f3fcff;
+  color: #08c;
+  border: 1px solid #dfe8eb;
+  -webkit-border-radius: 4px;
+  border-radius: 4px;
+  padding: 0px 5px;
+  margin-top: 4px;
+}
+.global-account .global-account-showbalance:hover {
+  color: #fff;
+  border: 1px solid #08c;
+  text-decoration: none;
+  background: #08c;
+}
+.global-account-right {
+  float: right;
+  height: 25px;
+  line-height: 24px;
+}
+.global-account-button {
+  margin-right: 10px;
+}
+a.global-msg-count {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+  padding: 0 4px;
+  height: 17px;
+  line-height: 17px;
+  text-align: center;
+  -webkit-border-radius: 2px 2px;
+  border-radius: 2px 2px;
+  background: #999;
+  color: #fff;
+}
+a.global-msg-count:hover {
+  position: relative;
+  color: #fff;
+  text-decoration: none;
+  top: -1px;
+}
+a.global-msg-count-active {
+  background: #f3623a;
+  -webkit-animation: spaceboots 0.8s infinite;
+  -moz-animation: spaceboots 0.8s infinite;
+  -o-animation: spaceboots 0.8s infinite;
+  -ms-animation: spaceboots 0.8s infinite;
+  animation: spaceboots 0.8s infinite;
+}
+a.global-msg-count-active:hover {
+  -webkit-animation: none;
+  -moz-animation: none;
+  -o-animation: none;
+  -ms-animation: none;
+  animation: none;
+}
+.global-msg-tit {
+  color: #808080;
+  font-size: 12px;
+  font-weight: 700;
+  padding-bottom: 2px;
+  margin-bottom: 5px;
+  border-bottom: 1px solid #ccc;
+}
+.global-msg-tit a {
+  color: #08c;
+}
+.global-msg-tit-link {
+  padding: 0 6px;
+}
+.global-msg-tit-action {
+  float: right;
+  font-weight: 400;
+}
+.global-msg-item {
+  position: relative;
+  padding: 4px 5px;
+  overflow: hidden;
+  zoom: 1;
+}
+.global-msg-item .global-msg-item-content:hover {
+  color: #666;
+  text-decoration: none;
+}
+.global-msg-item .global-msg-item-priority {
+  color: #c30;
+}
+.global-msg-item .global-msg-item-priority:hover {
+  color: #c30;
+}
+.global-msg-item .global-msg-item-close {
+  position: absolute;
+  display: block;
+/*
+  icon.png: Fail to Upload it, sorry.
+  tip.png: Fail to Upload it, sorry.
+  ➠ https://i.alipayobjects.com/e/201301/22clowBsuq.png » cake.png
+     
+     */
+  right: -10px;
+  bottom: 7px;
+  width: 9px;
+  height: 9px;
+  background: url("https://i.alipayobjects.com/e/201301/22rZId8I7p.png") no-repeat -16px 0;
+  overflow: hidden;
+  text-indent: -10px;
+}
+.global-msg-item .global-msg-item-close:hover {
+  background: url("https://i.alipayobjects.com/e/201301/22rZId8I7p.png") no-repeat 0 0;
+}
+.global-msg-item-hover {
+  background: #e6e6e6;
+}
+.global-msg-item-hover .global-msg-item-close {
+  right: 8px;
+}
+.global-msg-confirm {
+  height: 50px;
+  padding: 4px 5px;
+  background: #fff;
+}
+.global-msg-confirm .global-msg-comfirm-txt {
+  padding-bottom: 5px;
+}
+@-moz-keyframes spaceboots {
+  0% {
+    -webkit-transform: translate(0px, 0px);
+    -moz-transform: translate(0px, 0px);
+    -o-transform: translate(0px, 0px);
+    -ms-transform: translate(0px, 0px);
+    transform: translate(0px, 0px);
+  }
+
+  30% {
+    -webkit-transform: translate(0px, 1px);
+    -moz-transform: translate(0px, 1px);
+    -o-transform: translate(0px, 1px);
+    -ms-transform: translate(0px, 1px);
+    transform: translate(0px, 1px);
+  }
+
+  45% {
+    -webkit-transform: translate(0px, 2px);
+    -moz-transform: translate(0px, 2px);
+    -o-transform: translate(0px, 2px);
+    -ms-transform: translate(0px, 2px);
+    transform: translate(0px, 2px);
+  }
+
+  50% {
+    -webkit-transform: translate(0px, 3px);
+    -moz-transform: translate(0px, 3px);
+    -o-transform: translate(0px, 3px);
+    -ms-transform: translate(0px, 3px);
+    transform: translate(0px, 3px);
+  }
+
+  60% {
+    -webkit-transform: translate(0px, 2px);
+    -moz-transform: translate(0px, 2px);
+    -o-transform: translate(0px, 2px);
+    -ms-transform: translate(0px, 2px);
+    transform: translate(0px, 2px);
+  }
+
+  80% {
+    -webkit-transform: translate(0px, 1px);
+    -moz-transform: translate(0px, 1px);
+    -o-transform: translate(0px, 1px);
+    -ms-transform: translate(0px, 1px);
+    transform: translate(0px, 1px);
+  }
+}
+@-webkit-keyframes spaceboots {
+  0% {
+    -webkit-transform: translate(0px, 0px);
+    -moz-transform: translate(0px, 0px);
+    -o-transform: translate(0px, 0px);
+    -ms-transform: translate(0px, 0px);
+    transform: translate(0px, 0px);
+  }
+
+  30% {
+    -webkit-transform: translate(0px, 1px);
+    -moz-transform: translate(0px, 1px);
+    -o-transform: translate(0px, 1px);
+    -ms-transform: translate(0px, 1px);
+    transform: translate(0px, 1px);
+  }
+
+  45% {
+    -webkit-transform: translate(0px, 2px);
+    -moz-transform: translate(0px, 2px);
+    -o-transform: translate(0px, 2px);
+    -ms-transform: translate(0px, 2px);
+    transform: translate(0px, 2px);
+  }
+
+  50% {
+    -webkit-transform: translate(0px, 3px);
+    -moz-transform: translate(0px, 3px);
+    -o-transform: translate(0px, 3px);
+    -ms-transform: translate(0px, 3px);
+    transform: translate(0px, 3px);
+  }
+
+  60% {
+    -webkit-transform: translate(0px, 2px);
+    -moz-transform: translate(0px, 2px);
+    -o-transform: translate(0px, 2px);
+    -ms-transform: translate(0px, 2px);
+    transform: translate(0px, 2px);
+  }
+
+  80% {
+    -webkit-transform: translate(0px, 1px);
+    -moz-transform: translate(0px, 1px);
+    -o-transform: translate(0px, 1px);
+    -ms-transform: translate(0px, 1px);
+    transform: translate(0px, 1px);
+  }
+}
+@-o-keyframes spaceboots {
+  0% {
+    -webkit-transform: translate(0px, 0px);
+    -moz-transform: translate(0px, 0px);
+    -o-transform: translate(0px, 0px);
+    -ms-transform: translate(0px, 0px);
+    transform: translate(0px, 0px);
+  }
+
+  30% {
+    -webkit-transform: translate(0px, 1px);
+    -moz-transform: translate(0px, 1px);
+    -o-transform: translate(0px, 1px);
+    -ms-transform: translate(0px, 1px);
+    transform: translate(0px, 1px);
+  }
+
+  45% {
+    -webkit-transform: translate(0px, 2px);
+    -moz-transform: translate(0px, 2px);
+    -o-transform: translate(0px, 2px);
+    -ms-transform: translate(0px, 2px);
+    transform: translate(0px, 2px);
+  }
+
+  50% {
+    -webkit-transform: translate(0px, 3px);
+    -moz-transform: translate(0px, 3px);
+    -o-transform: translate(0px, 3px);
+    -ms-transform: translate(0px, 3px);
+    transform: translate(0px, 3px);
+  }
+
+  60% {
+    -webkit-transform: translate(0px, 2px);
+    -moz-transform: translate(0px, 2px);
+    -o-transform: translate(0px, 2px);
+    -ms-transform: translate(0px, 2px);
+    transform: translate(0px, 2px);
+  }
+
+  80% {
+    -webkit-transform: translate(0px, 1px);
+    -moz-transform: translate(0px, 1px);
+    -o-transform: translate(0px, 1px);
+    -ms-transform: translate(0px, 1px);
+    transform: translate(0px, 1px);
+  }
+}
+@-ms-keyframes spaceboots {
+  0% {
+    -webkit-transform: translate(0px, 0px);
+    -moz-transform: translate(0px, 0px);
+    -o-transform: translate(0px, 0px);
+    -ms-transform: translate(0px, 0px);
+    transform: translate(0px, 0px);
+  }
+
+  30% {
+    -webkit-transform: translate(0px, 1px);
+    -moz-transform: translate(0px, 1px);
+    -o-transform: translate(0px, 1px);
+    -ms-transform: translate(0px, 1px);
+    transform: translate(0px, 1px);
+  }
+
+  45% {
+    -webkit-transform: translate(0px, 2px);
+    -moz-transform: translate(0px, 2px);
+    -o-transform: translate(0px, 2px);
+    -ms-transform: translate(0px, 2px);
+    transform: translate(0px, 2px);
+  }
+
+  50% {
+    -webkit-transform: translate(0px, 3px);
+    -moz-transform: translate(0px, 3px);
+    -o-transform: translate(0px, 3px);
+    -ms-transform: translate(0px, 3px);
+    transform: translate(0px, 3px);
+  }
+
+  60% {
+    -webkit-transform: translate(0px, 2px);
+    -moz-transform: translate(0px, 2px);
+    -o-transform: translate(0px, 2px);
+    -ms-transform: translate(0px, 2px);
+    transform: translate(0px, 2px);
+  }
+
+  80% {
+    -webkit-transform: translate(0px, 1px);
+    -moz-transform: translate(0px, 1px);
+    -o-transform: translate(0px, 1px);
+    -ms-transform: translate(0px, 1px);
+    transform: translate(0px, 1px);
+  }
+}
+@keyframes spaceboots {
+  0% {
+    -webkit-transform: translate(0px, 0px);
+    -moz-transform: translate(0px, 0px);
+    -o-transform: translate(0px, 0px);
+    -ms-transform: translate(0px, 0px);
+    transform: translate(0px, 0px);
+  }
+
+  30% {
+    -webkit-transform: translate(0px, 1px);
+    -moz-transform: translate(0px, 1px);
+    -o-transform: translate(0px, 1px);
+    -ms-transform: translate(0px, 1px);
+    transform: translate(0px, 1px);
+  }
+
+  45% {
+    -webkit-transform: translate(0px, 2px);
+    -moz-transform: translate(0px, 2px);
+    -o-transform: translate(0px, 2px);
+    -ms-transform: translate(0px, 2px);
+    transform: translate(0px, 2px);
+  }
+
+  50% {
+    -webkit-transform: translate(0px, 3px);
+    -moz-transform: translate(0px, 3px);
+    -o-transform: translate(0px, 3px);
+    -ms-transform: translate(0px, 3px);
+    transform: translate(0px, 3px);
+  }
+
+  60% {
+    -webkit-transform: translate(0px, 2px);
+    -moz-transform: translate(0px, 2px);
+    -o-transform: translate(0px, 2px);
+    -ms-transform: translate(0px, 2px);
+    transform: translate(0px, 2px);
+  }
+
+  80% {
+    -webkit-transform: translate(0px, 1px);
+    -moz-transform: translate(0px, 1px);
+    -o-transform: translate(0px, 1px);
+    -ms-transform: translate(0px, 1px);
+    transform: translate(0px, 1px);
+  }
+}
+.global-birth-tip {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 90px;
+  height: 24px;
+  line-height: 24px;
+  text-align: center;
+}
+.global-birth-tip .global-birth-tip-content {
+  position: relative;
+  z-index: 2;
+  height: 100%;
+  width: 100%;
+  border: 1px solid #dea90c;
+  background: #ffff8d;
+}
+.global-birth-tip .global-birth-tip-shadow {
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  background: #a8a8a8;
+  border: 1px solid #a8a8a8;
+}
+.global-birth-tip .global-birth-tip-angle {
+  position: absolute;
+  top: 7px;
+  right: -12px;
+  _right: -10px;
+  z-index: 3;
+  display: block;
+/*
+  icon.png: Fail to Upload it, sorry.
+  tip.png: Fail to Upload it, sorry.
+  ➠ https://i.alipayobjects.com/e/201301/22clowBsuq.png » cake.png
+     
+     */
+  width: 11px;
+  height: 11px;
+  background: url("https://i.alipayobjects.com/e/201301/22raE9i9Xp.png") 0 0 no-repeat;
+}

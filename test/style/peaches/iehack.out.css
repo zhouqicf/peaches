@@ -1,0 +1,6 @@
+.color {
+    color: yellow\0;
+    color: green\9\0;
+    *color: blue;
+    _color: red;
+}
