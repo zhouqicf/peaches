@@ -32,7 +32,7 @@ describe('Peaches', function () {
                 var outStyleText = fs.readFileSync(path.join(__dirname, 'style/peaches/', file + '.out.css'), 'utf8');
                 styleText.should.equal(cssbeautify(outStyleText));
                 next();
-            });
+            },'peaches');
 
         });
     });

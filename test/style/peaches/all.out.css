@@ -1,5 +1,5 @@
 p, span {
-    background-image: url(http://127.0.0.1:8099/sprite-2722378013402-1-png8.png);
+    background-image: url(http://127.0.0.1:8099/sprite-peaches-1-png8.png);
 }
 
 p {
@@ -12,7 +12,7 @@ span {
 
 @media screen, projection {
     html, body, p {
-        background-image: url(http://127.0.0.1:8099/sprite-2722378013188-1-png8.png);
+        background-image: url(http://127.0.0.1:8099/sprite-peaches-e23629eba34b1b09a92f33047427be99-1-png8.png);
     }
 
     html {

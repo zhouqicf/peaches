@@ -24,7 +24,7 @@ var srv = http.createServer(function (req, res) {
     var css = fs.readFileSync('./test/style/peaches/all.css').toString();
     peaches(css, config, function (err, styleText) {
         res.end(cssbeautify(styleText.toString()));
-    });
+    }, 'debug');
 });
 // now that server is running
 srv.listen(1337, '127.0.0.1');
