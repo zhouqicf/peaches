@@ -6,7 +6,8 @@
 .column-left, .column-right {
     border: 1px solid #ccc;
     float: left;
-    width: 570px
+    width: 570px;
+    margin-top: 20px;
 }
 
 .column-right {

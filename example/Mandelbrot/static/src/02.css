@@ -1,0 +1,60 @@
+.test-02-01, .test-02-02, .test-02-03, .test-02-04 {
+    float: left;
+    width: 285px;
+    height: 214px;
+}
+
+.test-02-01 {
+    background: url('http://example.peaches.net/Mandelbrot/static/images/02-04-01-png8.png');
+}
+
+.test-02-02-01 {
+    background: url('http://example.peaches.net/Mandelbrot/static/images/02-04-02-01-png8.png');
+    width: auto;
+    height: auto;
+}
+
+.test-02-02-02 {
+    background: url('http://example.peaches.net/Mandelbrot/static/images/02-04-02-02-png8.png');
+    width: auto;
+    height: auto;
+}
+
+.test-02-03-01, .test-02-03-02, .test-02-03-03 {
+    float: left;
+    width: 95px;
+    height: 214px;
+}
+
+.test-02-03-01 {
+    background-image: url('http://example.peaches.net/Mandelbrot/static/images/02-04-03-01-png8.png');
+}
+
+.test-02-03-02 {
+    background-image: url('http://example.peaches.net/Mandelbrot/static/images/02-04-03-02-png8.png');
+}
+
+.test-02-03-03 {
+    background-image: url('http://example.peaches.net/Mandelbrot/static/images/02-04-03-03-png8.png');
+}
+
+.test-02-04-01, .test-02-04-02, .test-02-04-03 {
+    float: left;
+    width: 95px;
+    height: 214px;
+}
+
+.test-02-04-01 {
+    background-image: url('http://example.peaches.net/Mandelbrot/static/images/02-04-04-png8.png');
+    background-position: 0 0;
+}
+
+.test-02-04-02 {
+    background: url('http://example.peaches.net/Mandelbrot/static/images/02-04-04-png8.png') -95px 0;
+}
+
+.test-02-04-03 {
+    background-image: url('http://example.peaches.net/Mandelbrot/static/images/02-04-04-png8.png');
+    background-position: -190px 0;
+}
+

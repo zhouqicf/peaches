@@ -1,0 +1,12 @@
+.test-03-01, .test-03-02 {
+    width: 570px;
+    height: 214px;
+}
+
+.test-03-01 {
+    background: url(http://example.peaches.net/Mandelbrot/static/images/03-02-01-png8.png) left 0;
+}
+
+.test-03-02 {
+    background: url(http://example.peaches.net/Mandelbrot/static/images/03-02-02-png8.png) right 0;
+}

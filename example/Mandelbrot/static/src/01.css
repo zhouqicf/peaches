@@ -1,0 +1,21 @@
+.test-01-01, .test-01-02, .test-01-03, .test-01-04 {
+    float: left;
+    width: 285px;
+    height: 214px;
+}
+
+.test-01-01 {
+    background: url('http://example.peaches.net/Mandelbrot/static/images/01-04-01-png8.png');
+}
+
+.test-01-02 {
+    background: url('http://example.peaches.net/Mandelbrot/static/images/01-04-02-png8.png');
+}
+
+.test-01-03 {
+    background: url('http://example.peaches.net/Mandelbrot/static/images/01-04-03-png8.png');
+}
+
+.test-01-04 {
+    background: url('http://example.peaches.net/Mandelbrot/static/images/01-04-04-png8.png');
+}
