@@ -19,6 +19,7 @@ benchmark:
 	@./support/bench
 
 cleanTemp:
+	echo cleanTemp
 	rm -rf lib-cov
 	rm -rf download
 

@@ -1,0 +1,56 @@
+{"rules": [
+    {
+        "selectors": [".topbar"],
+        "declarations": [
+            {
+                "property": "width",
+                "value": "100%"
+            },
+            {
+                "property": "height",
+                "value": "26px"
+            },
+            {
+                "property": "background",
+                "value": "#f5f5f5"
+            },
+            {
+                "property": "background",
+                "value": "-moz-linear-gradient(-90deg, #fcfcfc 0%, #f5f5f5 100%)",
+                "hack": "-moz-"
+            },
+            {
+                "property": "background",
+                "value": "-webkit-linear-gradient(-90deg, #fcfcfc 0%, #f5f5f5 100%)",
+                "hack": "-webkit-"
+            },
+            {
+                "property": "background",
+                "value": "-o-linear-gradient(-90deg, #fcfcfc 0%, #f5f5f5 100%)",
+                "hack": "-o-"
+            },
+            {
+                "property": "background",
+                "value": "-ms-linear-gradient(-90deg, #fcfcfc 0%, #f5f5f5 100%)",
+                "hack": "-ms-"
+            },
+            {
+                "property": "background",
+                "value": "linear-gradient(-90deg, #fcfcfc 0%, #f5f5f5 100%)",
+                "hack": "linear-gradient"
+            },
+            {
+                "property": "filter",
+                "value": "progid:DXImageTransform.Microsoft.gradient(startColorstr='#fcfcfc', endColorstr='#f5f5f5')"
+            },
+            {
+                "property": "border-bottom",
+                "value": "1px solid #dcdcdc"
+            },
+            {
+                "property": "_overflow",
+                "value": "hidden"
+            }
+        ]
+    }
+]}
