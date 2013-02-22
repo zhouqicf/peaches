@@ -2,8 +2,8 @@
     background-image: url(https://i.alipayobjects.com/e/201301/25DFxqiuiC.png);
 }
 
-.test-01, .test-02 {
-    background-image: url(http://127.0.0.1:8099/sprite-postion.out-1-png8.png);
+.test-01, .test-02, .test-02-02 {
+    background-image: url(http://127.0.0.1:8099/sprite-peaches-1-png8.png);
 }
 
 .test-01 {
@@ -16,4 +16,8 @@
 
 .test-02-01 {
     background-position: 10em 10em;
+}
+
+.test-02-02 {
+    background-position: left -49px;
 }

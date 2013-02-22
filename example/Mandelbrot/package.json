@@ -1,6 +1,6 @@
 {
     "output": {
-        "./static/dist/peaches.css": [
+        "./static/dist/mandelbrot.css": [
             "./static/src/reset.css",
             "./static/src/layout.css",
             "./static/src/01.css",
