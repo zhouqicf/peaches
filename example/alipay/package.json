@@ -1,0 +1,7 @@
+{
+    "output": {
+        "./static/dist/style.css": [
+            "./static/src/style.css"
+        ]
+    }
+}
