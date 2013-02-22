@@ -1,0 +1,51 @@
+.test-04, .test-04-01 {
+    background-image: url(http://127.0.0.1:8099/sprite-peaches-1-png8.png);
+}
+
+.test-03-01 {
+    background-image: url(https://i.alipayobjects.com/combo.jpg?d=apps/24&t=10017);
+}
+
+.test-02 {
+    background-image: url(https://i.alipayobjects.com/combo.jpg?d=apps/24&t=10015,10017);
+}
+
+.test-01-01 {
+    background-image: url(https://i.alipayobjects.com/combo.jpg?d=apps/24&t=10015);
+}
+
+.test-01, .test-02-01, .test-03 {
+    background-image: url(https://i.alipayobjects.com/e/201301/25DFxqiuiC.png);
+}
+
+.test-01 {
+    background-repeat: repeat-x;
+}
+
+.test-01-01 {
+    background-repeat: repeat-x;
+}
+
+.test-02 {
+    background-repeat: repeat-y;
+}
+
+.test-02-01 {
+    background-repeat: repeat-y;
+}
+
+.test-03 {
+    background-repeat: repeat;
+}
+
+.test-03-01 {
+    background-repeat: repeat;
+}
+
+.test-04 {
+    background-position: -25px 0;
+}
+
+.test-04-01 {
+    background-position: 0 0;
+}
