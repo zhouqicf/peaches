@@ -30,7 +30,7 @@ program
     .option('-s, --sort <h>', '设置图片的排列方式， h 为纵向排列，v 为横向排列。默认为h，纵向排列', 'h')
     .option('-f, --format <png8>', '设置图片输出格式，可以选择 png8  、 png24 。默认为 png8', 'png8')
     .option('-b, --beautify', '设置输出的样式文件，是否经过格式化，默认为未格式化')
-    .option('--cloud', '使用云端模式');
+    .option('--cloud <server>', '使用云端模式，默认是用peachies.io','http://cloud.peaches.io/api/');
 
 
 program.on('--help', function () {
@@ -208,6 +208,9 @@ function main() {
         }
         if (typeof program.beautify !== 'undefined') {
             program.pkg.beautify = true;
+        }
+        if (typeof program.cloud !== 'undefined') {
+            program.pkg.cloud = program.cloud;
         }
         next();
     }, function (next) {

@@ -21,11 +21,14 @@ var config = {
 var srv = http.createServer(function (req, res) {
     'use strict';
     res.writeHead(200, {'Content-Type': 'text/plain'});
-    var css = fs.readFileSync('./test/style/peaches/media.css').toString();
-    peaches(css, config, function (err, styleText) {
-        res.end(cssbeautify(styleText.toString()));
-    }, 'debug');
+    var background = fs.readFileSync('./test/style/pom/multi-background.css').toString();
+    var pom = new POM(background);
+    pom.parse();
+    res.end(JSON.stringify(pom.stylesheet));
 });
 // now that server is running
 srv.listen(1337, '127.0.0.1');
+
+var canvas = require('canvas');
+var express = require('express');
 
