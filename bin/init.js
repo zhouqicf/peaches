@@ -8,7 +8,8 @@ var logger = require('colorful').logging;
 function init(program, next) {
     'use strict';
     var pkg = program.pkg;
-    process.env.PEACHES_HOME = path.join(process.env.HOME, '.peaches');
+    // windows 下，使用 process.env.HOMEPATH
+    process.env.PEACHES_HOME = path.join(process.env.HOME || process.env.HOMEPATH, '.peaches');
     var defaultPkg = path.join(process.env.PEACHES_HOME, 'package.json');
 
     // 读取 系统默认package.json；
