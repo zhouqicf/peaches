@@ -1,5 +1,7 @@
 # [Peaches](http://peaches.io) 
 
+>  简单、自然的书写样式
+
 -------------------
 Peaches是一个CSS编译工具。  
 
