@@ -1,31 +1,35 @@
-[Peaches](http://peaches.io/)
-======
-> 简单、自然的书写样式
+# [Peaches](http://peaches.io) 中文文档
 
-**Peaches** 是一个CSS编译工具，用于自动合并background-image并更新background-position。  
+-------------------
+Peaches是一个CSS编译工具。  
 
-**Peaches** 追求简单、自然的CSS书写方式。使用 **Peaches**，可以让我们的工作更轻松愉快：
+Peaches在执行过程中，通过分析CSS样式规则，提取背景图片，自动合并成sprite图，并自动更新背景定位。免去了手动合并图片和定位的麻烦，而且也大大提升后续修改样式的效率。
 
-* 告别烦人的图片合并:
-    * 每个需要背景图片的元素都可以单独设置。告别图片合并操作，将CSS优化的工作，交给 **Peaches**
-* 不再为定位背景图片而烦恼:
-    * 元素使用单独的背景图片，意味着不再需要定位背景。**Peaches** 将代劳这最伤神的定位操作。
-* 告别修改sprite图片带来的麻烦 :
-    * 现在你只要关心单个元素的背景图片，不用再担心因为修改图片影响其他功能了。
-    * 一个复杂的sprite图片举例：[https://i.alipayobjects.com/e/201112/1k1a4oNien.png](https://i.alipayobjects.com/e/201112/1k1a4oNien.png)
+## 安装篇
+不用担心安装会太麻烦，Peaches提供云端模式，基础安装一键完成！
 
-一个使用 **Peaches** 书写样式的例子:[点击这里](http://sliuqin.github.com/peaches/example/index.html)
+- [Peaches 安装帮助](http://blog.peaches.io/peaches/install.html) `npm install peaches -g`
+- [Canvas 安装帮助](http://blog.peaches.io/peaches/install-canvas.html)（选装包，决定在项目中是用Peaches后，建议安装）
 
-## 安装
-    npm install peaches -g
-    
-更多安装帮助,请[点击这里](https://github.com/sliuqin/peaches/blob/master/docs/install.md)
 
-## 使用
-在命令行中执行
-        
-        peaches build
+## 使用入门
+对着例子，5分钟入门！
+
+- [Peaches入门指南](http://blog.peaches.io/peaches/starter-kit.html)
+- [命令行帮助](http://blog.peaches.io/peaches/command.html)
+- [package.json 配置快速参考](./package.html)
+
+
+## 配置指南
+
  
- 更多参数,请[点击查看这里](https://github.com/sliuqin/peaches/blob/master/docs/命令行参数.md)      
-       
-  
+## 谁在使用
+
+* [支付宝首页](https://www.alipay.com) 作者: [pizn.net](http://www.pizn.net/) [@展新展新](http://weibo.com/pizner)
+* [支付宝-会员保障](https://my.alipay.com/portal/account/safeguard.htm)
+
+## 大家说
+* [使用 Peaches 合并背景图片](http://www.pizn.net/15-01-2013/use-peaches-to-combine-background-image/) 作者: [pizn.net](http://www.pizn.net/) [@展新展新](http://weibo.com/pizner)
+
+## 其他
+* [命名由来](http://blog.peaches.io/peaches/origin.html)
