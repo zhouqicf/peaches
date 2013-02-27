@@ -3,12 +3,9 @@ REPORTER = dot
 
 check: test
 
-test: test-unit
+## 默认使用云端
+test: test-local
 
-test-unit:
-	@NODE_ENV=test ./node_modules/.bin/mocha \
-		--reporter $(REPORTER) \
-		$(MOCHA_OPTS)
 
 test-local:
 	@TEST_MODE=local ./node_modules/.bin/mocha \
@@ -19,6 +16,10 @@ test-cloud:
 	@TEST_MODE=cloud ./node_modules/.bin/mocha \
 		--reporter $(REPORTER) \
 		$(MOCHA_OPTS)
+
+## windows 下测试。需要：ftp://ftp.equation.com/make/32/make.exe
+test-win:
+	node .\node_modules\mocha\bin\mocha
 
 test-cov: clean lib-cov
 	@PEACHES_COV=1 $(MAKE) test REPORTER=html-cov > coverage.html && $(MAKE) cleanTemp
