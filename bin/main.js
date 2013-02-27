@@ -72,7 +72,6 @@ function main() {
          */
         init(program, next);
     }, function (next) {
-        program.pkg.cloud = program.cloud;
         program.pkg.version = version;
         next();
     }, function (next) {
