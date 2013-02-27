@@ -4,6 +4,15 @@ var POM = require('./lib/pom');
 var fs = require('fs');
 var peaches = require('./lib/peaches');
 var cssbeautify = require('cssbeautify');
+
+var async = require('async');
+async.forEach([1, 2, 3, 4], function (num, next) {
+    console.log(num);
+    console.log(arguments);
+    next(num)
+}, function () {
+    console.log('all done');
+});
 var config = {
     "sort": "h",
     "format": "png8",

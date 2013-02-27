@@ -18,6 +18,9 @@ var config = {
         "baseURI": "http://127.0.0.1:8099/"
     }
 };
+if (process.env.TEST_MODE === 'cloud') {
+    config.cloud = 'http://cloud.peaches.net/api/';
+}
 describe('Peaches', function () {
     'use strict';
     fs.readdirSync(path.join(__dirname, './style/peaches/')).forEach(function (file) {
@@ -26,13 +29,14 @@ describe('Peaches', function () {
         }
         file = path.basename(file, '.css');
         it('should peaches ' + file, function (next) {
+            this.timeout(10000);
             var css = fs.readFileSync(path.join(__dirname, 'style/peaches/', file + '.css'), 'utf8');
             peaches(css, config, function (err, pom) {
                 var styleText = cssbeautify(pom.toString());
                 var outStyleText = fs.readFileSync(path.join(__dirname, 'style/peaches/', file + '.out.css'), 'utf8');
                 styleText.should.equal(cssbeautify(outStyleText));
                 next();
-            },'peaches');
+            });
 
         });
     });

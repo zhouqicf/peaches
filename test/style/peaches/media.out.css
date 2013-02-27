@@ -1,6 +1,6 @@
 @media screen, projection {
     html, body {
-        background-image: url(http://127.0.0.1:8099/sprite-peaches-e23629eba34b1b09a92f33047427be99-1-png8.png);
+        background-image: url(http://127.0.0.1:8099/sprite-57d2b23a2c6597f59e3189575e97a504-e23629eba34b1b09a92f33047427be99-1-png8.png);
     }
 
     html {
@@ -17,7 +17,7 @@
 
 @media print {
     html, .test {
-        background-image: url(http://127.0.0.1:8099/sprite-peaches-f7531e2d0ea27233ce00b5f01c5bf335-1-png8.png);
+        background-image: url(http://127.0.0.1:8099/sprite-57d2b23a2c6597f59e3189575e97a504-f7531e2d0ea27233ce00b5f01c5bf335-1-png8.png);
     }
 
     html {

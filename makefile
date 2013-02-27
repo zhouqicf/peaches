@@ -10,6 +10,16 @@ test-unit:
 		--reporter $(REPORTER) \
 		$(MOCHA_OPTS)
 
+test-local:
+	@TEST_MODE=local ./node_modules/.bin/mocha \
+		--reporter $(REPORTER) \
+		$(MOCHA_OPTS)
+
+test-cloud:
+	@TEST_MODE=cloud ./node_modules/.bin/mocha \
+		--reporter $(REPORTER) \
+		$(MOCHA_OPTS)
+
 test-cov: clean lib-cov
 	@PEACHES_COV=1 $(MAKE) test REPORTER=html-cov > coverage.html && $(MAKE) cleanTemp
 lib-cov:
