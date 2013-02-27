@@ -1,5 +1,7 @@
 # [Peaches](http://peaches.io) 
 
+[![Build Status](https://travis-ci.org/sliuqin/peaches.png?branch=master)](https://travis-ci.org/sliuqin/peaches)
+
 >  简单、自然的书写样式
 
 -------------------
