@@ -17,13 +17,13 @@ var config = {
     "server": {
         "name": "local",
         "port": 8099,
-        "root": "/Users/liuqin/.peaches/images",
-        "tmp": "/Users/liuqin/.peaches/tmp",
+        "root": path.join(process.env.PEACHES_HOME, "images"),
+        "tmp": path.join(process.env.PEACHES_HOME, "tmp"),
         "baseURI": "http://127.0.0.1:8099/"
     }
 };
 if (process.env.TEST_MODE === 'cloud') {
-    config.cloud = 'http://cloud.peaches.net/api/';
+    config.cloud = 'http://cloud.peaches.io/api/';
 }
 describe('Peaches', function () {
     'use strict';
