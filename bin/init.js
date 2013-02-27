@@ -8,22 +8,7 @@ var logger = require('colorful').logging;
 function init(program, next) {
     'use strict';
     var pkg = program.pkg;
-    // windows 下，使用 process.env.HOMEPATH
-    process.env.PEACHES_HOME = path.join(process.env.HOME || process.env.HOMEPATH, '.peaches');
-    var defaultPkg = path.join(process.env.PEACHES_HOME, 'package.json');
-
-    // 读取 系统默认package.json；
-    if (!fs.existsSync(defaultPkg)) {
-        try {
-            //TODO: 系统升级更新package.json时的处理。
-            shelljs.mkdir('-p', path.join(process.env.PEACHES_HOME, 'images'));
-            shelljs.mkdir('-p', path.join(process.env.PEACHES_HOME, 'tmp'));
-            shelljs.cp(path.resolve(__dirname, './package.json'), defaultPkg);
-        }
-        catch (e) {
-            logger.error('无法创建系统目录：error:%s', e);
-        }
-    }
+    var defaultPkg = initPeachesHome();
     // 设置pkg为系统默认配置
     program.pkg = require(defaultPkg);
 
@@ -66,5 +51,24 @@ function init(program, next) {
     }
     return next();
 }
+function initPeachesHome() {
+// windows 下，使用 process.env.HOMEPATH
+    process.env.PEACHES_HOME = path.join(process.env.HOME || process.env.HOMEPATH, '.peaches');
+    var defaultPkg = path.join(process.env.PEACHES_HOME, 'package.json');
 
+    // 读取 系统默认package.json；
+    if (!fs.existsSync(defaultPkg)) {
+        try {
+            //TODO: 系统升级更新package.json时的处理。
+            shelljs.mkdir('-p', path.join(process.env.PEACHES_HOME, 'images'));
+            shelljs.mkdir('-p', path.join(process.env.PEACHES_HOME, 'tmp'));
+            shelljs.cp(path.resolve(__dirname, './package.json'), defaultPkg);
+        }
+        catch (e) {
+            logger.error('无法创建系统目录：error:%s', e);
+        }
+    }
+    return defaultPkg;
+}
+init.initPeachesHome = initPeachesHome;
 module.exports = init;

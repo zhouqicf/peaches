@@ -3,6 +3,10 @@ var fs = require('fs'),
     path = require('path');
 
 require = require('./testutils');
+
+var initPeachesHome = require('../bin/init').initPeachesHome;
+initPeachesHome();
+
 var peaches = require('../lib/peaches.js');
 var cssbeautify = require('cssbeautify');
 var config = {
