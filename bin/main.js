@@ -176,10 +176,16 @@ function main() {
                         request.addListener('end', function () {
                             file.serve(request, response);
                         });
-                    }).listen(server.port);
-                    logger.end('local模式启动完毕,%s', server.baseURI);
+                    }).listen(server.port,function () {
+                            logger.end('local模式启动完毕,%s', server.baseURI);
+                        }).on('error', function (err) {
+                            if (err && err.code === 'EADDRINUSE') {
+                                logger.error('端口号：%s 被占用。静态服务器无法启动', server.port);
+                                logger.info('是否还有另外一个Peaches在运行？');
+                                process.exit(1);
+                            }
+                        });
                 }
-
                 break;
             case 'upyun':
                 if (server.username === '' || server.password === '' || server.bucket === '') {
