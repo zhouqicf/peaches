@@ -1,0 +1,47 @@
+.hidden {
+    position: absolute;
+    left: -999em
+}
+
+body #masthead {
+    position: relative;
+    left: auto;
+    top: auto;
+    margin-left: auto;
+    margin-right: auto;
+    width: 1000px
+}
+
+body #partner-nav {
+    position: relative;
+    left: auto;
+    top: auto;
+    margin-left: auto;
+    margin-right: auto;
+    width: 1000px
+}
+
+body #article-wrapper {
+    overflow: visible;
+    height: auto
+}
+
+body .phone-container, body .marketplacegiantfox {
+    display: none
+}
+
+body .partner-article .article-header {
+    position: static
+}
+
+body .partner-article .article-header .intro {
+    padding-top: 20px
+}
+
+body .partner-article section {
+    padding-top: 0
+}
+
+* {
+    zoom: 1
+}

@@ -1,0 +1,11 @@
+{
+    "output": {
+        "./static/dist/firefox.css": [
+            "./static/src/responsive.css"
+        ],
+        "./static/dist/partner.css": [
+            "./static/src/partner-logo.css",
+            "./static/src/icons.css"
+        ]
+    }
+}
