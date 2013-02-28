@@ -1,6 +1,7 @@
 # change log
-## 0.4
+## 0.4.0
 * 全新的css解析器，现在完美支持 CSS hack。
+* 全新的云端支持，windows，mac，linux 全平台支持。
 
 ## 0.3.6Beta
 * 支持 peaches -i a.css,b.css -o c.css
