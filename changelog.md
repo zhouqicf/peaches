@@ -1,4 +1,10 @@
 # change log
+
+## 0.4.1
+* 优化了background-position定义：  
+  现在 background-position:left top; 会解析为： background-position:0 0; 以便最优的定位。
+* 优化了本地静态服务器端口被占用的提示。
+
 ## 0.4.0
 * 全新的css解析器，现在完美支持 CSS hack。
 * 全新的云端支持，windows，mac，linux 全平台支持。
