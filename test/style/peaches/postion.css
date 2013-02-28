@@ -16,3 +16,11 @@
     background: url('https://i.alipayobjects.com/combo.jpg?d=apps/24&t=10017');
     background-position: left 0;
 }
+
+.test-03-01 {
+    background-position: left 100%;
+}
+
+.test-03-02 {
+    background-position: right top;
+}
