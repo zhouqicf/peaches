@@ -21,6 +21,12 @@ Peaches 追求简单、自然的CSS书写方式。使用 Peaches，可以让我�
   现在你只要关心单个元素的背景图片，不用再担心因为修改图片影响其他功能了。
   一个复杂的sprite图片举例：https://i.alipayobjects.com/e/201112/1k1a4oNien.png
 
+## 几个例子
+- [开拓自己的道路, 使用 Peaches 加速你的网站](http://sliuqin.github.com/peaches-example-firefox/): 一个对现有网站进行改造的例子
+- [支付宝首页Demo](http://sliuqin.github.com/peaches-example-alipay/): 看看真实的例子
+- [支付宝会员保障Demo](http://sliuqin.github.com/peaches-example-safeguard/)
+- [曼德博集合](https://github.com/sliuqin/peaches-example-Mandelbrot)
+
 ## 安装篇
 不用担心安装会太麻烦，Peaches提供云端模式，基础安装一键完成！
 
@@ -36,9 +42,6 @@ Peaches 追求简单、自然的CSS书写方式。使用 Peaches，可以让我�
 - [package.json 配置快速参考](./package.html)
 
 
-## 配置指南
-
- 
 ## 谁在使用
 
 * [支付宝首页](https://www.alipay.com) 作者: [pizn.net](http://www.pizn.net/) [@展新展新](http://weibo.com/pizner)

@@ -1,7 +1,0 @@
-{
-    "output": {
-        "./static/dist/alipay.css": [
-            "./static/src/style.css"
-        ]
-    }
-}
