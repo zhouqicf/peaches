@@ -1,0 +1,15 @@
+{
+    "rules": [
+        {
+            "selectors": [
+                "#mallSearch label"
+            ],
+            "declarations": [
+                {
+                    "property": "+top",
+                    "value": "1px"
+                }
+            ]
+        }
+    ]
+}
