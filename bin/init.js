@@ -10,7 +10,13 @@ function init(program, next) {
     var pkg = program.pkg;
     var defaultPkg = initPeachesHome();
     // 设置pkg为系统默认配置
-    program.pkg = require(defaultPkg);
+    try {
+        program.pkg = require(defaultPkg);
+    }
+    catch (e) {
+        logger.error('%s 格式似乎有点问题，请检查一下！', defaultPkg);
+        process.exit(1);
+    }
 
     if (pkg !== './package.json') {
         pkg = path.resolve(pkg);
@@ -52,6 +58,7 @@ function init(program, next) {
     return next();
 }
 function initPeachesHome() {
+    'use strict';
 // windows 下，使用 process.env.HOMEPATH
     process.env.PEACHES_HOME = path.join(process.env.HOME || process.env.HOMEPATH, '.peaches');
     var defaultPkg = path.join(process.env.PEACHES_HOME, 'package.json');
