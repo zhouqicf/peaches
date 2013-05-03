@@ -31,7 +31,7 @@
         "alipayobjects":{
             "name":"alipayobjects",
             "root":"./images",
-            "username":"",
+            "username":"liuqin.sheng",
             "tmp":"./tmp",
             "baseURI":"https://i.alipayobjects.com",
             "uploadUrl":"https://ecmng.alipay.com/home/uploadFile.json"
