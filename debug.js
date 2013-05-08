@@ -5,39 +5,60 @@ var fs = require('fs');
 var peaches = require('./lib/peaches');
 var cssbeautify = require('cssbeautify');
 
-var async = require('async');
-async.forEach([1, 2, 3, 4], function (num, next) {
-    console.log(num);
-    console.log(arguments);
-    next(num)
-}, function () {
-    console.log('all done');
-});
 var config = {
     "sort": "h",
     "format": "png8",
     "autoReload": false,
     "model": "local",
-    "server": {
-        "name": "local",
-        "port": 8099,
-        "root": "/Users/liuqin/.peaches/images",
-        "tmp": "/Users/liuqin/.peaches/tmp",
-        "baseURI": "http://127.0.0.1:8099/"
+    "retina":true,
+    "servers": {
+        "local": {
+            "name": "local",
+            "port": 8099,
+            "root": "/Users/liuqin/.peaches/images",
+            "tmp": "/Users/liuqin/.peaches/tmp",
+            "baseURI": "http://127.0.0.1:8099/"
+        },
+        "upyun": {
+            "name": "upyun",
+            "username": "",
+            "password": "",
+            "bucket": "",
+            "baseURI": "",
+            "root": "/Users/liuqin/.peaches/images",
+            "tmp": "/Users/liuqin/.peaches/tmp"
+        },
+        "scp": {
+            "name": "scp",
+            "root": "/Users/liuqin/.peaches/images",
+            "tmp": "/Users/liuqin/.peaches/tmp",
+            "server": "",
+            "dir": "",
+            "baseURI": ""
+        },
+        "alipayobjects": {
+            "name": "alipayobjects",
+            "root": "/Users/liuqin/.peaches/images",
+            "username": "liuqin.sheng",
+            "tmp": "/Users/liuqin/.peaches/tmp",
+            "baseURI": "https://i.alipayobjects.com",
+            "uploadUrl": "https://ecmng.alipay.com/home/uploadFile.json"
+        }
     }
+
 };
 
 var srv = http.createServer(function (req, res) {
     'use strict';
     res.writeHead(200, {'Content-Type': 'text/plain'});
-    var background = fs.readFileSync('./test/style/pom/multi-background.css').toString();
-    var pom = new POM(background);
-    pom.parse();
-    res.end(JSON.stringify(pom.stylesheet));
+    var background = fs.readFileSync('/Users/liuqin/Projects/02.peaches/peaches-retina/static/css/src/apple.css').toString();
+    config.server = config.servers[config.model];
+    peaches(background, config, function (err, styleText) {
+        res.end(cssbeautify(styleText));
+    });
+
 });
 // now that server is running
 srv.listen(1337, '127.0.0.1');
-
-var canvas = require('canvas');
-var express = require('express');
+console.log('http://127.0.0.1:1337')
 
