@@ -174,9 +174,7 @@ function main() {
                     logger.info('使用local模式，默认启动autoReload。帮助：http://peaches.io/doc/package#local');
                     var file = new (nodeStatic.Server)(server.root);
                     require('http').createServer(function (request, response) {
-                        request.addListener('end', function () {
-                            file.serve(request, response);
-                        });
+                        file.serve(request, response);
                     }).listen(server.port,function () {
                             logger.end('local模式启动完毕,%s', server.baseURI);
                         }).on('error', function (err) {
