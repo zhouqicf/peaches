@@ -73,6 +73,7 @@ function main() {
          */
         init(program, next);
     }, function (next) {
+        
         program.pkg.version = version;
         next();
     }, function (next) {
@@ -215,6 +216,7 @@ function main() {
         }
         if (typeof program.cloud !== 'undefined') {
             program.pkg.cloud = program.cloud;
+            logger.info('云端模式：', program.pkg.cloud);
         }
         next();
     }, function (next) {
@@ -285,6 +287,7 @@ function main() {
         if (typeof program.retina !== "undefined") {
             program.pkg.retina = program.retina;
         }
+        logger.info('支持Retina显示')
         cli.main(program.pkg);
 
         if (program.autoReload) {
