@@ -33,7 +33,7 @@ function init(program, next) {
             logger.error('package.json 定义似乎有问题,检查一下!');
             process.exit(1);
         }
-        program.pkg = _.extend(program.pkg, pkg);
+        program.pkg = _.extend(pkg, program.pkg);
     }
     // 默认加载当前目录下的配置。
     else {
