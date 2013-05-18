@@ -5,3 +5,5 @@ test
 changelog.md
 nlogger.json
 todo.md
+.idea
+.travis.yml
