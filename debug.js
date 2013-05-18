@@ -10,7 +10,7 @@ var config = {
     "format": "png8",
     "autoReload": false,
     "model": "local",
-    "retina":true,
+    "retina": true,
     "servers": {
         "local": {
             "name": "local",
@@ -60,5 +60,5 @@ var srv = http.createServer(function (req, res) {
 });
 // now that server is running
 srv.listen(1337, '127.0.0.1');
-console.log('http://127.0.0.1:1337')
+console.log('http://127.0.0.1:1337');
 

@@ -73,7 +73,7 @@ function main() {
          */
         init(program, next);
     }, function (next) {
-        
+
         program.pkg.version = version;
         next();
     }, function (next) {
@@ -225,7 +225,7 @@ function main() {
          */
         var baseDir = shelljs.pwd(),
             o, dist, output2 = {};
-
+        program.pkg.source = path.resolve(baseDir, program.pkg.source || "");
         // 如果传了参数则不读取 package.json 的 output
         // 支持 peaches b.css a.css -o c.css
         if (program.args.length > 0) {
