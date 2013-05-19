@@ -34,7 +34,7 @@
             "root": "./images",
             "username": "liuqin.sheng",
             "tmp": "./tmp",
-            "baseURI": "https://i.alipay.com",
+            "baseURI": "https://i.alipayobjects.com",
             "uploadUrl": "https://ecmng.alipay.com/home/uploadFile.json"
         }
     }
