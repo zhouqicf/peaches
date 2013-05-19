@@ -62,17 +62,23 @@ function initPeachesHome() {
 // windows 下，使用 process.env.HOMEPATH
     process.env.PEACHES_HOME = path.join(process.env.HOME || process.env.HOMEPATH, '.peaches');
     var defaultPkg = path.join(process.env.PEACHES_HOME, 'package.json');
-
+    var sysPkg = path.resolve(__dirname, './package.json');
     // 读取 系统默认package.json；
     if (!fs.existsSync(defaultPkg)) {
         try {
-            //TODO: 系统升级更新package.json时的处理。
             shelljs.mkdir('-p', path.join(process.env.PEACHES_HOME, 'images'));
             shelljs.mkdir('-p', path.join(process.env.PEACHES_HOME, 'tmp'));
-            shelljs.cp(path.resolve(__dirname, './package.json'), defaultPkg);
+            shelljs.cp(sysPkg, defaultPkg);
         }
         catch (e) {
             logger.error('无法创建系统目录：error:%s', e);
+        }
+    }
+    else {
+        var pkg = require(defaultPkg);
+        var pkg2 = require(sysPkg);
+        if (pkg.version !== pkg2.version) {
+            shelljs.cp('-f',sysPkg, defaultPkg);
         }
     }
     return defaultPkg;

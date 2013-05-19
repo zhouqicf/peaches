@@ -36,8 +36,8 @@ var config = {
             "dir": "",
             "baseURI": ""
         },
-        "alipayobjects": {
-            "name": "alipayobjects",
+        "alipay": {
+            "name": "alipay",
             "root": "/Users/liuqin/.peaches/images",
             "username": "liuqin.sheng",
             "tmp": "/Users/liuqin/.peaches/tmp",

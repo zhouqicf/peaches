@@ -19,7 +19,7 @@ function list(val) {
 program
     .version(version)
     .usage('[<a.css> [<b.css> ...]] [options]')
-    .option('-m, --model <local/alipayobjects/scp/upyun>', '配置图片托管模式，默认为local模式', 'local')
+    .option('-m, --model <local/alipay/scp/upyun>', '配置图片托管模式，默认为local模式', 'local')
     .option('-v, --verbose', '显示更多的日志信息')
     .option('-i, --input <file...>', '需要编译的css，以“,”分割,各文件将会被合并编译', list)
     .option('-o, --output <output>', '文件输出')
@@ -36,7 +36,7 @@ program
 
 program.on('--help', function () {
     'use strict';
-    console.log('  1.关于图片托管模式（-m, --model <local/alipayobjects/scp/upyun>），请查看http://peaches.io/doc/image-model');
+    console.log('  1.关于图片托管模式（-m, --model <local/alipay/scp/upyun>），请查看http://peaches.io/doc/image-model');
     console.log('');
     console.log('  一些例子:');
     console.log('');
@@ -49,7 +49,7 @@ program.on('--help', function () {
     console.log('    $ peaches -i a.css,b.css -o out.css');
     console.log('');
     console.log('    3. 合并a.css,b.css 并编译到到out.css,并将图片上传到alipaycnd');
-    console.log('    $ peaches a.css b.css -o out.css -m alipayobjects');
+    console.log('    $ peaches a.css b.css -o out.css -m alipay');
     console.log('');
     console.log('    4. 根据当前目录下的package.json 配置进行编译');
     console.log('    $ peaches');
@@ -137,7 +137,7 @@ function main() {
             });
         });
     }, function (next) {
-        var modelList = ['local', 'alipayobjects', 'scp', 'upyun'];
+        var modelList = ['local', 'alipay', 'scp', 'upyun'];
         if (typeof program.model !== 'undefined') {
             program.pkg.model = program.model;
         }
@@ -199,9 +199,9 @@ function main() {
                     process.exit(1);
                 }
                 break;
-            case 'alipayobjects':
+            case 'alipay':
                 if (server.username === '') {
-                    logger.error('alipayobjects 没有配置完整，请参考 http://peaches.io/doc/package#alipayobjects 配置');
+                    logger.error('alipay 没有配置完整，请参考 http://peaches.io/doc/package#alipay 配置');
                     process.exit(1);
                 }
                 break;
