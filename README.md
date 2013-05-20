@@ -7,6 +7,8 @@
 -------------------
 Peaches是一个CSS编译工具。  
 
+update: v0.5.0 [变身高富帅：让网站支持高清显示](http://peaches.io/blog/2013/05/20/peaches-for-retina-display/)
+
 Peaches在执行过程中，通过分析CSS样式规则，提取背景图片，自动合并成sprite图，并自动更新背景定位。免去了手动合并图片和定位的麻烦，而且也大大提升后续修改样式的效率。
 
 Peaches 追求简单、自然的CSS书写方式。使用 Peaches，可以让我们的工作更轻松愉快：
