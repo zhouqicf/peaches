@@ -284,12 +284,14 @@ function main() {
     ], function () {
 
         program.pkg.clean = program.clean;
-        if (typeof program.retina !== "undefined") {
-            program.pkg.retina = program.retina;
-        }
-        logger.info('支持Retina显示')
-        cli.main(program.pkg);
+        if (typeof program.retina !== "undefined" && program.retina !== false) {
+            program.pkg.retina = !!program.retina;
 
+        }
+        if (program.pkg.retina) {
+            logger.info('支持Retina显示');
+        }
+        cli.main(program.pkg);
         if (program.autoReload) {
             watchOutput();
 
