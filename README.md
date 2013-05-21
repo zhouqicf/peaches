@@ -3,7 +3,7 @@
 > Peaches是一个基于Node的CSS编译工具，用于自动合成CSS Sprite。
 > Peaches 追求简单、自然的CSS书写方式！
 
-update: `peaches HD v0.5.0` 发布，[支持Retina!](http://sliuqin.github.io/peaches-retina/) ,[变身高富帅：让网站支持高清显示](http://peaches.io/blog/2013/05/20/peaches-for-retina-display/)
+update: `peaches HD v0.5.0` 发布，支持Retina! ,[变身高富帅：让网站支持高清显示](http://peaches.io/blog/2013/05/20/peaches-for-retina-display/)
 
 
 原理图：
