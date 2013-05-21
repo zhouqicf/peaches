@@ -3,7 +3,7 @@
 > Peaches是一个基于Node的CSS编译工具，用于自动合成CSS Sprite。
 > Peaches 追求简单、自然的CSS书写方式！
 
-update: `peaches HD v0.5.0` 发布，支持Retina! [一份代码兼容屌丝和高帅富！](http://sliuqin.github.io/peaches-retina/)
+update: `peaches HD v0.5.0` 发布，[支持Retina!](http://sliuqin.github.io/peaches-retina/) ,[变身高富帅：让网站支持高清显示](http://peaches.io/blog/2013/05/20/peaches-for-retina-display/)
 
 
 原理图：
@@ -29,8 +29,8 @@ update: `peaches HD v0.5.0` 发布，支持Retina! [一份代码兼容屌丝和�
 ## 安装篇
 不用担心安装会太麻烦，Peaches提供云端模式，基础安装一键完成！
 
-- [Peaches 安装帮助](./blog/2012/12/12/install) `npm install peaches -g`
-- [Canvas 安装帮助](./blog/2012/12/12/install-canvas)（选装包，决定在项目中使用Peaches后，建议安装）
+- [Peaches 安装帮助](http://peaches.io/blog/2012/12/12/install) `npm install peaches -g`
+- [Canvas 安装帮助](http://peaches.io/blog/2012/12/12/install-canvas)（选装包，决定在项目中使用Peaches后，建议安装）
 
 ### 什么是“云端模式”？
 由于图片合并需要用到[node-canvas](https://github.com/LearnBoost/node-canvas),这又是一个在Mac和Windows下极其难装的工具。
@@ -44,9 +44,9 @@ update: `peaches HD v0.5.0` 发布，支持Retina! [一份代码兼容屌丝和�
 ## 使用入门
 对着例子，5分钟入门！
 
-- [Peaches入门指南](./blog/2012/12/12/starter-kit)
-- [命令行帮助](./blog/2012/12/12/command)
-- [package.json 配置快速参考](./blog/2012/12/12/package)
+- [Peaches入门指南](http://peaches.io/blog/2012/12/12/starter-kit)
+- [命令行帮助](http://peaches.io/blog/2012/12/12/command)
+- [package.json 配置快速参考](http://peaches.io/blog/2012/12/12/package)
 
 
 ## 谁在使用
@@ -65,7 +65,7 @@ update: `peaches HD v0.5.0` 发布，支持Retina! [一份代码兼容屌丝和�
 * [使用 Peaches 合并背景图片](http://www.pizn.net/15-01-2013/use-peaches-to-combine-background-image/) 作者: [pizn.net](http://www.pizn.net/) [@展新展新](http://weibo.com/pizner)
 
 ## 其他
-* [命名由来](./blog/2012/12/12/origin)
+* [命名由来](http://peaches.io/blog/2012/12/12/origin)
 
 ## 联系我
 使用过程中有任何问题，可以通过旺旺：@蔡伦 及 [github issues](https://github.com/sliuqin/peaches/issues) 和我联系
