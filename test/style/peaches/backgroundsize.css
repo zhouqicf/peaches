@@ -1,0 +1,50 @@
+#J-slide {
+    position: relative;
+    width: 100%;
+    height: 400px;
+    background: #f9f4ed url(https://i.alipayobjects.com/e/201206/2qz2UvlUVF.gif) no-repeat center center;
+}
+
+.bg {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    overflow: hidden;
+    background-size: cover;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    -webkit-transition: opacity 800ms ease-in-out;
+    -moz-transition: opacity 800ms ease-in-out;
+    -ms-transition: opacity 800ms ease-in-out;
+    -o-transition: opacity 800ms ease-in-out;
+    transition: opacity 800ms ease-in-out;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.icon-mac {
+    background: url(http://www.apple.com.cn/mac/home/images/buystrip_hero.jpg);
+    width: 253px;
+    height: 204px;
+}
+
+.icon-online {
+    background: url(http://www.apple.com.cn/mac/home/images/buystrip_online.png);
+    width: auto;
+    height: auto;
+}
+
+.icon-retail {
+    background: url(http://www.apple.com.cn/mac/home/images/buystrip_retail.png);
+    width: 122px;
+    height: 89px;
+}
+
+.icon-call {
+    background: url(http://www.apple.com.cn/mac/home/images/buystrip_call.png);
+    width: 108px;
+    height: 89px;
+}
