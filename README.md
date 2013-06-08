@@ -51,9 +51,9 @@ update: `peaches HD v0.5.0` 发布，支持Retina! ,[变身高富帅：让网站
 
 ## 谁在使用
 
-* [支付宝首页](https://www.alipay.com) 作者: [pizn.net](http://www.pizn.net/) [@展新展新](http://weibo.com/pizner)
-* [支付宝-会员保障](https://my.alipay.com/portal/account/safeguard.htm)
+* [支付宝首页 Retina](https://www.alipay.com) 
 * [支付宝-收银台](https://cashier.alipay.com/)
+* [天猫品牌街 Retina](http://brand.tmall.com/)
 
 ## 几个例子
 - [开拓自己的道路, 使用 Peaches 加速你的网站](http://sliuqin.github.com/peaches-example-firefox/)【[github](http://github.com/sliuqin/peaches-example-firefox)】: 一个对现有网站进行改造的例子
