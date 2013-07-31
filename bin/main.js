@@ -25,7 +25,7 @@ program
     .option('-o, --output <output>', '文件输出')
     .option('-q, --quiet', '显示较少的日志信息')
     .option('-p, --pkg <package.json>', '设置package.json的路径,默认使用当前目录下的package.json', './package.json')
-    .option('-c, --clean', '清空缓存文件，系统会保留备份文件夹，不需要备份，请结合 --force参数使用')
+    .option('-c, --clean', '清空缓存文件')
     .option('-r, --autoReload', '设置是否根据文件的变更自动编译。默认为 false')
     .option('-s, --sort <h>', '设置图片的排列方式， h 为纵向排列，v 为横向排列。默认为h，纵向排列', 'h')
     .option('-f, --format <png8>', '设置图片输出格式，可以选择 png8  、 png24 。默认为 png8', 'png8')
@@ -284,6 +284,9 @@ function main() {
     ], function () {
 
         program.pkg.clean = program.clean;
+        if(program.pkg.clean){
+            shelljs.rm(path.join(process.env.PEACHES_HOME,'hash.json'));
+        }
         if (typeof program.retina !== "undefined" && program.retina !== false) {
             program.pkg.retina = !!program.retina;
 
