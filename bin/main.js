@@ -19,7 +19,7 @@ function list(val) {
 program
     .version(version)
     .usage('[<a.css> [<b.css> ...]] [options]')
-    .option('-m, --model <local/alipay/scp/upyun>', '配置图片托管模式，默认为local模式', 'local')
+    .option('-m, --model <local/alipay/scp/upyun>', '配置图片托管模式，默认为local模式')
     .option('-v, --verbose', '显示更多的日志信息')
     .option('-i, --input <file...>', '需要编译的css，以“,”分割,各文件将会被合并编译', list)
     .option('-o, --output <output>', '文件输出')
@@ -284,8 +284,8 @@ function main() {
     ], function () {
 
         program.pkg.clean = program.clean;
-        if(program.pkg.clean){
-            shelljs.rm(path.join(process.env.PEACHES_HOME,'hash.json'));
+        if (program.pkg.clean) {
+            shelljs.rm(path.join(process.env.PEACHES_HOME, 'hash.json'));
         }
         if (typeof program.retina !== "undefined" && program.retina !== false) {
             program.pkg.retina = !!program.retina;
@@ -295,7 +295,9 @@ function main() {
             logger.info('支持Retina显示');
         }
         cli.main(program.pkg);
-        if (program.autoReload) {
+        if (program.pkg.autoReload) {
+            logger.info('启动autoReload');
+            
             watchOutput();
 
             fs.watchFile(program.pkg, function (curr, prev) {
