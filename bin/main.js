@@ -137,7 +137,7 @@ function main() {
             });
         });
     }, function (next) {
-        var modelList = ['local', 'alipay', 'scp', 'upyun'];
+        var modelList = ['local', 'alipay', 'scp', 'upyun','tfsdaily'];
         if (typeof program.model !== 'undefined') {
             program.pkg.model = program.model;
         }

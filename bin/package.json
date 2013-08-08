@@ -3,7 +3,7 @@
     "format": "png8",
     "autoReload": false,
     "model": "local",
-    "version": "0.5.0",
+    "version": "0.5.8",
     "servers": {
         "local": {
             "name": "local",
@@ -33,6 +33,14 @@
             "name": "alipay",
             "root": "./images",
             "username": "liuqin.sheng",
+            "tmp": "./tmp",
+            "baseURI": "https://i.alipayobjects.com",
+            "uploadUrl": "https://ecmng.alipay.com/home/uploadFile.json"
+        },
+        "tfsdaily": {
+            "name": "tfsdaily",
+            "root": "./images",
+            "appkey": "5201dc77ae7a4",
             "tmp": "./tmp",
             "baseURI": "https://i.alipayobjects.com",
             "uploadUrl": "https://ecmng.alipay.com/home/uploadFile.json"
