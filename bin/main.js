@@ -137,7 +137,7 @@ function main() {
             });
         });
     }, function (next) {
-        var modelList = ['local', 'alipay', 'scp', 'upyun','tfsdaily'];
+        var modelList = ['local', 'alipay', 'scp', 'upyun', 'tfsdaily','tfs'];
         if (typeof program.model !== 'undefined') {
             program.pkg.model = program.model;
         }
@@ -204,6 +204,9 @@ function main() {
                     logger.error('alipay 没有配置完整，请参考 http://peaches.io/doc/package#alipay 配置');
                     process.exit(1);
                 }
+                break;
+            case 'tfs':
+                logger.info('tfs');
                 break;
         }
         next();
@@ -297,7 +300,7 @@ function main() {
         cli.main(program.pkg);
         if (program.pkg.autoReload) {
             logger.info('启动autoReload');
-            
+
             watchOutput();
 
             fs.watchFile(program.pkg, function (curr, prev) {

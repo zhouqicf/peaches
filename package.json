@@ -1,6 +1,6 @@
 {
     "name": "peaches",
-    "version": "0.5.8",
+    "version": "0.5.10",
     "description": "Peaches是一个CSS编译工具，用于自动合并背景图片并更新background-position。",
     "keywords": [
         "css",
@@ -31,7 +31,10 @@
         "node-static": "0.6.7",
         "cssbeautify": "~0.3.0",
         "less": "~1.4.0",
-        "peaches-tfs": ""
+        "peaches-tfs": "",
+        "cheerio": "~0.12.1",
+        "iconv-lite": "~0.2.11",
+        "form-data": "~0.1.0"
     },
     "devDependencies": {
         "canvas": "~0.13.1",
