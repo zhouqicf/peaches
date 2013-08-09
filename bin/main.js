@@ -137,7 +137,7 @@ function main() {
             });
         });
     }, function (next) {
-        var modelList = ['local', 'alipay', 'scp', 'upyun', 'tfsdaily','tfs'];
+        var modelList = ['local', 'alipay', 'scp', 'upyun', 'tfsdaily', 'tfs'];
         if (typeof program.model !== 'undefined') {
             program.pkg.model = program.model;
         }
@@ -206,7 +206,15 @@ function main() {
                 }
                 break;
             case 'tfs':
-                logger.info('tfs');
+                if (server.cookie === '') {
+                    logger.error('tfs 没有配置完整，请按照一下方式配置：');
+                    logger.error('1. 登录图片上传网页：http://tps.tms.taobao.com/daogou/photo/index.htm');
+                    logger.error('2. 打开开发者工具，获取 document.cookie 的值，并复制');
+                    logger.error('3. 打开 peaches 系统配置文件：%s',path.join(process.env.PEACHES_HOME,'package.json'));
+                    logger.error('4. 找到关于 tfs 的配置项，设置 cookie 字段值为刚才复制的值');
+                    logger.error('5. 重新运行 peaches');
+                    process.exit(1);
+                }
                 break;
         }
         next();

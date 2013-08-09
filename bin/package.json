@@ -46,7 +46,7 @@
             "name": "tfs",
             "root": "./images",
             "tmp": "./tmp",
-            "cookie": "lzstat_uv=9135926801634412082|1296239@2225939; lzstat_ss=356386932_0_1375976082_1296239|3726401998_0_1375976082_2225939; v=0; uc1=lltime=1376037735&cookie14=UoLbuUBvovVOyQ%3D%3D&existShop=false&cookie16=VFC%2FuZ9az08KUQ56dCrZDlbNdA%3D%3D&cookie21=URm48syIZQ%3D%3D&tag=0&cookie15=Vq8l%2BKCLz3%2F65A%3D%3D; tg=0; _cc_=W5iHLLyFfA%3D%3D; t=9a874ea50fc227d953b0803aa1041a2b; _nk_=%5Cu95ED%5Cu6708; _l_g_=Ug%3D%3D; tracknick=%5Cu95ED%5Cu6708; sg=%E6%9C%8841; lgc=%5Cu95ED%5Cu6708; lastgetwwmsg=MTM3NjAzODY4Mw%3D%3D; mt=np=; cmsTbToken=%2Cedbb3b35bbbeb%2356999254833339002; cna=UCaKCo+5AFgCASp4SwIxPp0e",
+            "cookie": "",
             "inputUrl": "http://tps.tms.taobao.com/photo/index.htm?spm=0.0.0.22.ojwxli",
             "uploadUrl": "http://tps.tms.taobao.com/photo/upload.htm?_input_charset=UTF-8"
         }
