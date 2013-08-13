@@ -31,6 +31,9 @@ program
     .option('-f, --format <png8>', '设置图片输出格式，可以选择 png8  、 png24 。默认为 png8', 'png8')
     .option('-b, --beautify', '设置输出的样式文件，是否经过格式化，默认为未格式化')
     .option('--retina', '设置是否支持高清屏')
+    .option('--charset <charset>', '设置输入输出文件编码格式如:gbk/gb2312等,默认为 utf8 ')
+    .option('--inputCharset <charset>', '设置输入文件编码格式如:gbk/gb2312等,如果不强制指定,那么使用charset')
+    .option('--outputCharset <charset>', '设置输出文件编码格式如:gbk/gb2312等,如果不强制指定,那么使用charset')
     .option('--cloud <server>', '使用云端模式，默认是用peaches.io');
 
 
@@ -76,6 +79,35 @@ function main() {
 
         program.pkg.version = version;
         next();
+    }, function (next) {
+        /**
+         * 初始化编码方式
+         */
+        if (typeof program.charset !== 'undefined') {
+            program.pkg.charset = program.charset;
+        }
+        
+        // 但没有配置 charset 时,设置默认值:
+        if(typeof program.pkg.charset === 'undefined'){
+            program.pkg.charset = 'utf8';
+        }
+
+        if (typeof program.inputCharset !== 'undefined') {
+            program.pkg.inputCharset = program.inputCharset;
+        }
+        if (typeof program.outputCharset !== 'undefined') {
+            program.pkg.outputCharset = program.outputCharset;
+        }
+        
+        if(typeof program.pkg.outputCharset === 'undefined'){
+            program.pkg.outputCharset = program.pkg.charset;
+        }
+        if(typeof program.pkg.inputCharset === 'undefined'){
+            program.pkg.inputCharset = program.pkg.charset;
+        }
+        
+        next();
+        
     }, function (next) {
         /**
          * 处理 format。
@@ -210,7 +242,7 @@ function main() {
                     logger.error('tfs 没有配置完整，请按照一下方式配置：');
                     logger.error('1. 登录图片上传网页：http://tps.tms.taobao.com/daogou/photo/index.htm');
                     logger.error('2. 打开开发者工具，获取 document.cookie 的值，并复制');
-                    logger.error('3. 打开 peaches 系统配置文件：%s',path.join(process.env.PEACHES_HOME,'package.json'));
+                    logger.error('3. 打开 peaches 系统配置文件：%s', path.join(process.env.PEACHES_HOME, 'package.json'));
                     logger.error('4. 找到关于 tfs 的配置项，设置 cookie 字段值为刚才复制的值');
                     logger.error('5. 重新运行 peaches');
                     process.exit(1);
