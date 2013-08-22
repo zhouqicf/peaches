@@ -3,7 +3,7 @@
     "format": "png8",
     "autoReload": false,
     "model": "local",
-    "version": "0.5.10",
+    "version": "0.5.14",
     "servers": {
         "local": {
             "name": "local",
@@ -32,10 +32,9 @@
         "alipay": {
             "name": "alipay",
             "root": "./images",
-            "username": "liuqin.sheng",
             "tmp": "./tmp",
-            "baseURI": "https://i.alipayobjects.com",
-            "uploadUrl": "https://ecmng.alipay.com/home/uploadFile.json"
+            "bizName": "",
+            "token": ""
         },
         "tfsdaily": {
             "name": "tfsdaily",

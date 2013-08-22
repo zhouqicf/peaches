@@ -86,9 +86,9 @@ function main() {
         if (typeof program.charset !== 'undefined') {
             program.pkg.charset = program.charset;
         }
-        
+
         // 但没有配置 charset 时,设置默认值:
-        if(typeof program.pkg.charset === 'undefined'){
+        if (typeof program.pkg.charset === 'undefined') {
             program.pkg.charset = 'utf8';
         }
 
@@ -98,16 +98,16 @@ function main() {
         if (typeof program.outputCharset !== 'undefined') {
             program.pkg.outputCharset = program.outputCharset;
         }
-        
-        if(typeof program.pkg.outputCharset === 'undefined'){
+
+        if (typeof program.pkg.outputCharset === 'undefined') {
             program.pkg.outputCharset = program.pkg.charset;
         }
-        if(typeof program.pkg.inputCharset === 'undefined'){
+        if (typeof program.pkg.inputCharset === 'undefined') {
             program.pkg.inputCharset = program.pkg.charset;
         }
-        
+
         next();
-        
+
     }, function (next) {
         /**
          * 处理 format。
@@ -232,8 +232,12 @@ function main() {
                 }
                 break;
             case 'alipay':
-                if (server.username === '') {
-                    logger.error('alipay 没有配置完整，请参考 http://peaches.io/doc/package#alipay 配置');
+                if (!server.token || !server.bizName) {
+                    logger.error('alipay 没有配置完整，请按照一下方式配置：');
+                    logger.error('1. 请找 @天蓬 申请 cdn 图片上传 token');
+                    logger.error('2. 打开 peaches 系统配置文件：%s', path.join(process.env.PEACHES_HOME, 'package.json'));
+                    logger.error('3. 找到关于 alipay 的配置项，设置 bizName 和 token');
+                    logger.error('4. 重新运行 peaches');
                     process.exit(1);
                 }
                 break;
