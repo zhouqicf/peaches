@@ -1,4 +1,6 @@
 # change log
+## 0.5.14
+* 更新 alipay cdn 上传
 
 ## 0.5.13
 * 新增 \9 hack 处理
