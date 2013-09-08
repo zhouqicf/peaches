@@ -1,4 +1,7 @@
 # change log
+0.5.16
+* bugfix #36
+
 ## 0.5.14
 * 更新 alipay cdn 上传
 
