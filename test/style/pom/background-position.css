@@ -1,0 +1,18 @@
+.btn {
+    background-position: 1px 1px;
+}
+
+.btn {
+    background: url(xxxx.png#unpeaches) no-repeat -9999px -9999px;
+    background-position: 1px 233px;
+}
+
+.link {
+    color: blue;
+    font-size: 122px;
+}
+
+.link {
+    color: red;
+    font-size: 12px;
+}

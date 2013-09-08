@@ -51,7 +51,7 @@ var config = {
 var srv = http.createServer(function (req, res) {
     'use strict';
     res.writeHead(200, {'Content-Type': 'text/plain'});
-    var background = fs.readFileSync('/Users/liuqin/Projects/02.peaches/peaches-retina/static/css/src/apple.css').toString();
+    var background = fs.readFileSync('/Users/liuqin/Projects/02.peaches/peaches/test/style/pom/background-position.css').toString();
     config.server = config.servers[config.model];
     peaches(background, config, function (err, styleText) {
         res.end(cssbeautify(styleText));
