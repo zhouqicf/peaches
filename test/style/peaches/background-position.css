@@ -1,0 +1,30 @@
+.btn {
+    background-position: 1px 1px;
+    font-size: 18px;
+}
+
+.btn {
+    color: red;
+
+    background-position: 1px 233px;
+    font-size: 12px;
+    font-size: 13px;
+
+    background-position: 12px 233px;
+
+    background: url(xxxx.png#unpeaches) no-repeat -9999px -9999px;
+}
+
+.link {
+    color: blue;
+    font-size: 122px;
+    background-position: 12px 233px;
+
+    background: url(xxxx.png#unpeaches) no-repeat -9999px -9999px;
+}
+
+.link {
+    color: red;
+    font-size: 12px;
+    background-position: 1px 233px;
+}

@@ -205,18 +205,18 @@
                 ".test-7-1"
             ],
             "declarations": [
-                {
-                    "property": "background-image",
-                    "value": "url(https://i.alipayobjects.com/e/201301/1CdeO2mZF6.png)"
-                },
 
+                
                 {
+                    "property": "background-color",
+                    "value": "rgb(255,255,0)"
+                },{
                     "property": "background-repeat",
                     "value": "no-repeat"
                 },
                 {
-                    "property": "background-color",
-                    "value": "rgb(255,255,0)"
+                    "property": "background-image",
+                    "value": "url(https://i.alipayobjects.com/e/201301/1CdeO2mZF6.png)"
                 }
             ]
         }

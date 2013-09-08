@@ -14,8 +14,8 @@
     position: relative;
     width: 100%;
     height: 400px;
-    background-repeat: no-repeat;
     background-color: #f9f4ed;
+    background-repeat: no-repeat;
     background-position: center center;
 }
 
@@ -27,7 +27,6 @@
     height: 100%;
     opacity: 0;
     overflow: hidden;
-    background-position: 50% 50%;
     background-repeat: no-repeat;
     -webkit-transition: opacity 800ms ease-in-out;
     -moz-transition: opacity 800ms ease-in-out;
@@ -36,6 +35,7 @@
     transition: opacity 800ms ease-in-out;
     text-align: center;
     vertical-align: middle;
+    background-position: 50% 50%;
 }
 
 .icon-mac {
@@ -45,15 +45,15 @@
 }
 
 .icon-online {
-    width: 126px;
-    height: 89px;
     background-position: -253px 0;
+    width: 286px;
+    height: 79px;
 }
 
 .icon-retail {
     width: 122px;
     height: 89px;
-    background-position: -253px -89px;
+    background-position: -253px -79px;
 }
 
 .icon-call {
