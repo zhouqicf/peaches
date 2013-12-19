@@ -34,8 +34,7 @@
         "peaches-tfs": "",
         "cheerio": "~0.12.1",
         "iconv-lite": "~0.2.11",
-        "form-data": "~0.1.0",
-        "iconv-lite":"~0.2.11"
+        "form-data": "~0.1.0"
     },
     "devDependencies": {
         "canvas": "~0.13.1",
